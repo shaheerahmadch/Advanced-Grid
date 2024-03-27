@@ -158,7 +158,7 @@ const AgGrid: React.FC<MyAgGridProps> = React.memo(({ apiUrl, enableRowGroupColu
     // changed heigh from 8vh to 100%
     const onRowSelected = useCallback(
         (event: any) => {
-            console.log(
+            window.alert(
                 "row " +
                 event.node.data +
                 " selected = " +
@@ -171,12 +171,12 @@ const AgGrid: React.FC<MyAgGridProps> = React.memo(({ apiUrl, enableRowGroupColu
     const onSelectionChanged = useCallback(
         (event: any) => {
             var rowCount = event.api.getSelectedNodes().length;
-            console.log("selection changed, " + rowCount + " rows selected");
+            window.alert("selection changed, " + rowCount + " rows selected");
         },
         [window],
     );
     return (
-        <div className={divClass} style={{ width: '100%', height: '100%' }}>
+        <div className={divClass} style={{ width: '100%', height: '100vh' }}>
             < AgGridReact
                 rowData={rowData}
                 columnDefs={columnDefs}
