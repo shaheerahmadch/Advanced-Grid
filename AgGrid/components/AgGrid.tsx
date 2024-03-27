@@ -80,6 +80,8 @@ const AgGrid: React.FC<MyAgGridProps> = React.memo(({ apiUrl, enableRowGroupColu
                         const enableRowGroup: string[] = enableRowGroupColumns?.split(";") || [];
                         const enablePivot: string[] = pivotColumns?.split(";") || [];
                         const aggFunc: string[] = aggFuncColumns?.split(";") || [];
+                        console.log(columnDef);
+                        console.log(columnDef.rows)
                         if(columnDef && columnDef.rows && columnDef.rows.length > 0){
                             const dynamicColumnDefs: any = columnDef.rows;
                             setColumnDefs(dynamicColumnDefs)

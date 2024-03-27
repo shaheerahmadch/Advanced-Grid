@@ -1,0 +1,2 @@
+C:\repos\Advanced-Grid\obj\Debug\pcfaggrid.pcfproj.AssemblyReference.cache
+C:\repos\Advanced-Grid\obj\Debug\pcfaggrid.pcfproj.CoreCompileInputs.cache

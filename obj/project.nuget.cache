@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "nDH26icjV7/VznIbhvWjudo/iEuf0vQqte4ogdcA5VEjK23cfNwcHCoMe8N9ykuv7cZehcC7K2UtvlEQcKjDkA==",
+  "success": true,
+  "projectFilePath": "C:\\repos\\Advanced-Grid\\pcfaggrid.pcfproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ShaheerAhmad\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.0\\microsoft.netframework.referenceassemblies.1.0.0.nupkg.sha512",
+    "C:\\Users\\ShaheerAhmad\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net462\\1.0.0\\microsoft.netframework.referenceassemblies.net462.1.0.0.nupkg.sha512",
+    "C:\\Users\\ShaheerAhmad\\.nuget\\packages\\microsoft.powerapps.msbuild.pcf\\1.31.2\\microsoft.powerapps.msbuild.pcf.1.31.2.nupkg.sha512"
+  ],
+  "logs": []
+}
