@@ -32009,3 +32009,1459 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
          [10:19:49 am] [build]  Running ESLint...
          [10:19:52 am] [build]  Compiling and bundling control...
          [BABEL] Note: The code generator has deoptimised the styling of C:\repos\Advanced-Grid\node_modules\react-dom\cjs\react-dom.development.js as it exceeds the max of 500KB.
+         [BABEL] Note: The code generator has deoptimised the styling of C:\repos\Advanced-Grid\node_modules\ag-grid-enterprise\dist\ag-grid-enterprise.auto.esm.js as it exceeds the max of 500KB.
+         [BABEL] Note: The code generator has deoptimised the styling of C:\repos\Advanced-Grid\node_modules\ag-grid-community\dist\package\main.cjs.js as it exceeds the max of 500KB.
+         [BABEL] Note: The code generator has deoptimised the styling of C:\repos\Advanced-Grid\node_modules\ag-grid-enterprise\node_modules\ag-grid-community\dist\ag-grid-community.auto.esm.js as it exceeds the max of 500KB.
+         [Webpack stats]:
+         asset bundle.js 8.53 MiB [emitted] (name: main)
+         runtime modules 1.7 KiB 8 modules
+         modules by path ./node_modules/ 8.04 MiB 32 modules
+         asset modules 35.1 KiB
+           modules by mime type font/woff2 28.4 KiB
+             data:font/woff2;charset=utf-8;base64,d09GMgABAAAAABms.. 8.64 KiB [built] [code generated]
+             + 3 modules
+           modules by mime type image/svg+xml 6.71 KiB
+             data:image/svg+xml;base64,PHN2ZyB3aWR0aD0i.. 6.36 KiB [built] [code generated]
+             data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0i.. 355 bytes [built] [code generated]
+         modules by path ./AgGrid/ 15.6 KiB
+           modules by path ./AgGrid/css/*.css 3.1 KiB
+             ./AgGrid/css/grid.css 1.22 KiB [built] [code generated]
+             ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./AgGrid/css/grid.css 1.88 KiB [built] [code generated]
+           ./AgGrid/index.ts 4.62 KiB [built] [code generated]
+           ./AgGrid/components/AgGrid.tsx 7.85 KiB [built] [code generated]
+         webpack 5.90.3 compiled successfully in 580745 ms
+         [10:29:34 am] [build]  Generating build outputs...
+         [10:29:34 am] [build]  Succeeded
+       Done executing task "Exec".
+       Task "PpbtTelemetryEndBuildPhase"
+         Task Parameter:BuildPhase=npm-build
+         Task Parameter:BuildPhaseStartTimeTicks=638471135838700299
+         Task Parameter:ProjectType=pcf
+         TelemetrySessionService: Calling telemetry recorder with process info: 
+           WD: C:\Users\ShaheerAhmad\.nuget\packages\microsoft.powerapps.msbuild.pcf\1.31.2\tasks\net6.0\ppbtTelemetryRecorder
+           FileName: C:\Program Files\dotnet\dotnet.exe
+           ppbtTelemetryRecorder.dll TrackEvent 2024-03-27T05:29:36.3066833+00:00 pcf c3ff8941-444e-415e-aace-2fb95efb3066 EndBuildPhase {\"buildPhase\":\"npm-build\"} "{\"Execution Time(ms)\":592436.0}"
+       Done executing task "PpbtTelemetryEndBuildPhase".
+   2:7>Done building target "PcfBuild" in project "pcfaggrid.pcfproj".
+       Done executing task "CallTarget".
+   2:7>Done building target "_PcfNpmRunBuild" in project "pcfaggrid.pcfproj".
+       Target "_PcfForceNpmRunBuild" skipped, due to false condition; ( '$(PcfAlwaysNpmRunBuild)' == 'true' ) was evaluated as ( 'false' == 'true' ).
+   2:7>Target "Build" in file "C:\Program Files\dotnet\sdk\8.0.103\Microsoft.Common.CurrentVersion.targets" from project "C:\repos\Advanced-Grid\pcfaggrid.pcfproj" (entry point):
+       Target output items:
+           C:\repos\Advanced-Grid\out\controls\pcfaggrid.exe
+               TargetFrameworkIdentifier = .NETFramework
+               TargetPlatformMoniker = Windows,Version=7.0
+               CopyUpToDateMarker = C:\repos\Advanced-Grid\obj\Debug\pcfaggrid.pcfproj.CopyComplete
+               TargetPlatformIdentifier = Windows
+               TargetFrameworkVersion = 4.6.2
+   2:7>Done building target "Build" in project "pcfaggrid.pcfproj".
+   2:7>Done Building Project "C:\repos\Advanced-Grid\pcfaggrid.pcfproj" (default targets).
+   1:7>ResolveProjectReferences:
+         Output Item(s): 
+             _ResolvedProjectReferencePaths=
+                 C:\repos\Advanced-Grid\out\controls\pcfaggrid.exe
+                         AdditionalPropertiesFromProject=
+                         BuildReference=true
+                         CopyUpToDateMarker=C:\repos\Advanced-Grid\obj\Debug\pcfaggrid.pcfproj.CopyComplete
+                         HasSingleTargetFramework=true
+                         IsRidAgnostic=true
+                         MSBuildSourceProjectFile=C:\repos\Advanced-Grid\pcfaggrid.pcfproj
+                         MSBuildSourceTargetName=GetTargetFrameworks
+                         NearestTargetFramework=net462
+                         OriginalItemSpec=..\..\pcfaggrid.pcfproj
+                         OutputItemType=
+                         Platform=AnyCPU
+                         Platforms=
+                         ReferenceOutputAssembly=true
+                         ReferenceSourceTarget=ProjectReference
+                         TargetFrameworkIdentifier=.NETFramework
+                         TargetFrameworkMonikers=.NETFramework,Version=v4.6.2
+                         TargetFrameworks=net462
+                         TargetFrameworkVersion=4.6.2
+                         TargetPlatformIdentifier=Windows
+                         TargetPlatformMoniker=Windows,Version=7.0
+                         TargetPlatformMonikers=Windows,Version=7.0
+                         Targets=
+                         UndefineProperties=;TargetFramework;RuntimeIdentifier;SelfContained
+       Done executing task "MSBuild".
+       Task "MSBuild"
+         Task Parameter:SkipNonexistentTargets=True
+         Task Parameter:
+             Projects=
+                 ..\..\pcfaggrid.pcfproj
+                         AdditionalPropertiesFromProject=
+                         BuildReference=true
+                         HasSingleTargetFramework=true
+                         IsRidAgnostic=true
+                         MSBuildSourceProjectFile=C:\repos\Advanced-Grid\pcfaggrid.pcfproj
+                         MSBuildSourceTargetName=GetTargetFrameworks
+                         NearestTargetFramework=net462
+                         OriginalItemSpec=..\..\pcfaggrid.pcfproj
+                         OutputItemType=
+                         Platform=AnyCPU
+                         Platforms=
+                         ReferenceOutputAssembly=true
+                         ReferenceSourceTarget=ProjectReference
+                         TargetFrameworkMonikers=.NETFramework,Version=v4.6.2
+                         TargetFrameworks=net462
+                         TargetPlatformMonikers=Windows,Version=7.0
+                         Targets=
+                         UndefineProperties=;TargetFramework;RuntimeIdentifier;SelfContained
+         Task Parameter:Targets=GetNativeManifest
+         Task Parameter:BuildInParallel=True
+         Removing Properties for project "..\..\pcfaggrid.pcfproj":
+           TargetFramework
+           RuntimeIdentifier
+           SelfContained
+   1:7>Project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (1:7) is building "C:\repos\Advanced-Grid\pcfaggrid.pcfproj" (2:8) on node 1 (GetNativeManifest target(s)).
+   2:8>Project file contains ToolsVersion="15.0". This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion="Current". For more information, please see http://go.microsoft.com/fwlink/?LinkId=293424.
+       Target "_PpbtTelemetryInitializeSession" skipped. Previously built successfully.
+   2:8>Target "GetNativeManifest" in file "C:\Program Files\dotnet\sdk\8.0.103\Microsoft.Common.CurrentVersion.targets" from project "C:\repos\Advanced-Grid\pcfaggrid.pcfproj" (entry point):
+   2:8>Done building target "GetNativeManifest" in project "pcfaggrid.pcfproj".
+   2:8>Done Building Project "C:\repos\Advanced-Grid\pcfaggrid.pcfproj" (GetNativeManifest target(s)).
+   1:7>Done executing task "MSBuild".
+       Task "Warning" skipped, due to false condition; ('@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceNonexistent)' != '') was evaluated as ('..\..\pcfaggrid.pcfproj' != '' and '' != '').
+       Target output items:
+           C:\repos\Advanced-Grid\out\controls\pcfaggrid.exe
+               ReferenceSourceTarget = ProjectReference
+               MSBuildSourceProjectFile = C:\repos\Advanced-Grid\pcfaggrid.pcfproj
+               HasSingleTargetFramework = true
+               TargetFrameworkIdentifier = .NETFramework
+               ReferenceOutputAssembly = true
+               OutputItemType = 
+               TargetPlatformMonikers = Windows,Version=7.0
+               TargetPlatformMoniker = Windows,Version=7.0
+               BuildReference = true
+               Platform = AnyCPU
+               CopyUpToDateMarker = C:\repos\Advanced-Grid\obj\Debug\pcfaggrid.pcfproj.CopyComplete
+               AdditionalPropertiesFromProject = 
+               TargetFrameworkMonikers = .NETFramework,Version=v4.6.2
+               TargetFrameworks = net462
+               IsRidAgnostic = true
+               MSBuildSourceTargetName = GetTargetFrameworks
+               NearestTargetFramework = net462
+               UndefineProperties = ;TargetFramework;RuntimeIdentifier;SelfContained
+               OriginalProjectReferenceItemSpec = ..\..\pcfaggrid.pcfproj
+               TargetPlatformIdentifier = Windows
+               TargetFrameworkVersion = 4.6.2
+               Platforms = 
+               Targets = 
+               OriginalItemSpec = ..\..\pcfaggrid.pcfproj
+   1:7>Done building target "ResolveProjectReferences" in project "PowerAppsToolsTemp_sa.cdsproj".
+       Target "FindInvalidProjectReferences" skipped, due to false condition; ('$(FindInvalidProjectReferences)' == 'true') was evaluated as ('' == 'true').
+       Target "ResolveNativeReferences" skipped, due to false condition; ('@(NativeReference)'!='') was evaluated as (''!='').
+       Target "ResolveProjectReferences" skipped. Previously built successfully.
+       Target "FindInvalidProjectReferences" skipped, due to false condition; ('$(FindInvalidProjectReferences)' == 'true') was evaluated as ('' == 'true').
+       Target "GetFrameworkPaths" skipped. Previously built successfully.
+       Target "GetReferenceAssemblyPaths" skipped. Previously built successfully.
+       Target "PrepareForBuild" skipped. Previously built successfully.
+       Target "GetInstalledSDKLocations" skipped, due to false condition; ('@(SDKReference)' != '') was evaluated as ('' != '').
+   1:7>Target "ResolveSDKReferences" in file "C:\Program Files\dotnet\sdk\8.0.103\Microsoft.Common.CurrentVersion.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "ResolveAssemblyReferences" depends on it):
+       Task "ResolveSDKReference" skipped, due to false condition; ('@(SDKReference)'!='') was evaluated as (''!='').
+   1:7>Done building target "ResolveSDKReferences" in project "PowerAppsToolsTemp_sa.cdsproj".
+       Target "ResolveSDKReferences" skipped. Previously built successfully.
+   1:7>Target "ExpandSDKReferences" in file "C:\Program Files\dotnet\sdk\8.0.103\Microsoft.Common.CurrentVersion.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "ResolveAssemblyReferences" depends on it):
+       Task "GetSDKReferenceFiles" skipped, due to false condition; ('@(ResolvedSDKReference)'!='') was evaluated as (''!='').
+   1:7>Done building target "ExpandSDKReferences" in project "PowerAppsToolsTemp_sa.cdsproj".
+   1:7>Target "ImplicitlyExpandNETStandardFacades" in file "C:\Program Files\dotnet\sdk\8.0.103\Microsoft\Microsoft.NET.Build.Extensions\Microsoft.NET.Build.Extensions.NETFramework.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "ResolveAssemblyReferences" depends on it):
+       Added Item(s): 
+           _CandidateNETStandardReferences=
+               mscorlib
+                       Pack=false
+               C:\repos\Advanced-Grid\out\controls\pcfaggrid.exe
+                       AdditionalPropertiesFromProject=
+                       BuildReference=true
+                       CopyUpToDateMarker=C:\repos\Advanced-Grid\obj\Debug\pcfaggrid.pcfproj.CopyComplete
+                       HasSingleTargetFramework=true
+                       IsRidAgnostic=true
+                       MSBuildSourceProjectFile=C:\repos\Advanced-Grid\pcfaggrid.pcfproj
+                       MSBuildSourceTargetName=GetTargetFrameworks
+                       NearestTargetFramework=net462
+                       OriginalItemSpec=..\..\pcfaggrid.pcfproj
+                       OriginalProjectReferenceItemSpec=..\..\pcfaggrid.pcfproj
+                       OutputItemType=
+                       Platform=AnyCPU
+                       Platforms=
+                       ReferenceOutputAssembly=true
+                       ReferenceSourceTarget=ProjectReference
+                       TargetFrameworkIdentifier=.NETFramework
+                       TargetFrameworkMonikers=.NETFramework,Version=v4.6.2
+                       TargetFrameworks=net462
+                       TargetFrameworkVersion=4.6.2
+                       TargetPlatformIdentifier=Windows
+                       TargetPlatformMoniker=Windows,Version=7.0
+                       TargetPlatformMonikers=Windows,Version=7.0
+                       Targets=
+                       UndefineProperties=;TargetFramework;RuntimeIdentifier;SelfContained
+       Added Item(s): 
+           _InboxNETStandardFolders=
+               C:\Users\ShaheerAhmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\
+               C:\Users\ShaheerAhmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\Facades\
+       Set Property: _RunGetDependsOnNETStandard=true
+       Using "GetDependsOnNETStandard" task from assembly "C:\Program Files\dotnet\sdk\8.0.103\Microsoft\Microsoft.NET.Build.Extensions\\tools\net8.0\Microsoft.NET.Build.Extensions.Tasks.dll".
+       Task "GetDependsOnNETStandard"
+         Task Parameter:
+             References=
+                 mscorlib
+                         Pack=false
+                 C:\repos\Advanced-Grid\out\controls\pcfaggrid.exe
+                         AdditionalPropertiesFromProject=
+                         BuildReference=true
+                         CopyUpToDateMarker=C:\repos\Advanced-Grid\obj\Debug\pcfaggrid.pcfproj.CopyComplete
+                         HasSingleTargetFramework=true
+                         IsRidAgnostic=true
+                         MSBuildSourceProjectFile=C:\repos\Advanced-Grid\pcfaggrid.pcfproj
+                         MSBuildSourceTargetName=GetTargetFrameworks
+                         NearestTargetFramework=net462
+                         OriginalItemSpec=..\..\pcfaggrid.pcfproj
+                         OriginalProjectReferenceItemSpec=..\..\pcfaggrid.pcfproj
+                         OutputItemType=
+                         Platform=AnyCPU
+                         Platforms=
+                         ReferenceOutputAssembly=true
+                         ReferenceSourceTarget=ProjectReference
+                         TargetFrameworkIdentifier=.NETFramework
+                         TargetFrameworkMonikers=.NETFramework,Version=v4.6.2
+                         TargetFrameworks=net462
+                         TargetFrameworkVersion=4.6.2
+                         TargetPlatformIdentifier=Windows
+                         TargetPlatformMoniker=Windows,Version=7.0
+                         TargetPlatformMonikers=Windows,Version=7.0
+                         Targets=
+                         UndefineProperties=;TargetFramework;RuntimeIdentifier;SelfContained
+         Output Property: DependsOnNETStandard=False
+       Done executing task "GetDependsOnNETStandard".
+       Set Property: _UsingOldSDK=true
+       Task "NETBuildExtensionsError" skipped, due to false condition; ('$(DependsOnNETStandard)' == 'true' AND '$(NETStandardInbox)' != 'true' AND '$(_UsingOldSDK)' == 'true') was evaluated as ('False' == 'true' AND '' != 'true' AND 'true' == 'true').
+       Task "AddFacadesToReferences" skipped, due to false condition; ('@(_NETStandardLibraryNETFrameworkLib)' != '') was evaluated as ('' != '').
+   1:7>Done building target "ImplicitlyExpandNETStandardFacades" in project "PowerAppsToolsTemp_sa.cdsproj".
+       Target "GetFrameworkPaths" skipped. Previously built successfully.
+       Target "GetReferenceAssemblyPaths" skipped. Previously built successfully.
+   1:7>Target "_HandlePackageFileConflicts" in file "C:\Program Files\dotnet\sdk\8.0.103\Microsoft\Microsoft.NET.Build.Extensions\Microsoft.NET.Build.Extensions.ConflictResolution.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "ResolveAssemblyReferences" depends on it):
+       Using "ResolvePackageFileConflicts" task from assembly "C:\Program Files\dotnet\sdk\8.0.103\Microsoft\Microsoft.NET.Build.Extensions\\tools\net8.0\Microsoft.NET.Build.Extensions.Tasks.dll".
+       Task "ResolvePackageFileConflicts"
+         Task Parameter:
+             References=
+                 mscorlib
+                         Pack=false
+         Task Parameter:
+             PackageOverrides=
+                 NETStandard.Library
+                         OverriddenPackages=
+                 Microsoft.Win32.Primitives|4.3.0;
+                 System.AppContext|4.3.0;
+                 System.Collections|4.3.0;
+                 System.Collections.Concurrent|4.3.0;
+                 System.Collections.Immutable|1.4.0;
+                 System.Collections.NonGeneric|4.3.0;
+                 System.Collections.Specialized|4.3.0;
+                 System.ComponentModel|4.3.0;
+                 System.ComponentModel.EventBasedAsync|4.3.0;
+                 System.ComponentModel.Primitives|4.3.0;
+                 System.ComponentModel.TypeConverter|4.3.0;
+                 System.Console|4.3.0;
+                 System.Data.Common|4.3.0;
+                 System.Diagnostics.Contracts|4.3.0;
+                 System.Diagnostics.Debug|4.3.0;
+                 System.Diagnostics.FileVersionInfo|4.3.0;
+                 System.Diagnostics.Process|4.3.0;
+                 System.Diagnostics.StackTrace|4.3.0;
+                 System.Diagnostics.TextWriterTraceListener|4.3.0;
+                 System.Diagnostics.Tools|4.3.0;
+                 System.Diagnostics.TraceSource|4.3.0;
+                 System.Diagnostics.Tracing|4.3.0;
+                 System.Dynamic.Runtime|4.3.0;
+                 System.Globalization|4.3.0;
+                 System.Globalization.Calendars|4.3.0;
+                 System.Globalization.Extensions|4.3.0;
+                 System.IO|4.3.0;
+                 System.IO.Compression|4.3.0;
+                 System.IO.Compression.ZipFile|4.3.0;
+                 System.IO.FileSystem|4.3.0;
+                 System.IO.FileSystem.DriveInfo|4.3.0;
+                 System.IO.FileSystem.Primitives|4.3.0;
+                 System.IO.FileSystem.Watcher|4.3.0;
+                 System.IO.IsolatedStorage|4.3.0;
+                 System.IO.MemoryMappedFiles|4.3.0;
+                 System.IO.Pipes|4.3.0;
+                 System.IO.UnmanagedMemoryStream|4.3.0;
+                 System.Linq|4.3.0;
+                 System.Linq.Expressions|4.3.0;
+                 System.Linq.Queryable|4.3.0;
+                 System.Net.Http|4.3.0;
+                 System.Net.NameResolution|4.3.0;
+                 System.Net.Primitives|4.3.0;
+                 System.Net.Requests|4.3.0;
+                 System.Net.Security|4.3.0;
+                 System.Net.Sockets|4.3.0;
+                 System.Net.WebHeaderCollection|4.3.0;
+                 System.ObjectModel|4.3.0;
+                 System.Private.DataContractSerialization|4.3.0;
+                 System.Reflection|4.3.0;
+                 System.Reflection.Emit|4.3.0;
+                 System.Reflection.Emit.ILGeneration|4.3.0;
+                 System.Reflection.Emit.Lightweight|4.3.0;
+                 System.Reflection.Extensions|4.3.0;
+                 System.Reflection.Primitives|4.3.0;
+                 System.Reflection.TypeExtensions|4.3.0;
+                 System.Resources.ResourceManager|4.3.0;
+                 System.Runtime|4.3.0;
+                 System.Runtime.Extensions|4.3.0;
+                 System.Runtime.Handles|4.3.0;
+                 System.Runtime.InteropServices|4.3.0;
+                 System.Runtime.InteropServices.RuntimeInformation|4.3.0;
+                 System.Runtime.Loader|4.3.0;
+                 System.Runtime.Numerics|4.3.0;
+                 System.Runtime.Serialization.Formatters|4.3.0;
+                 System.Runtime.Serialization.Json|4.3.0;
+                 System.Runtime.Serialization.Primitives|4.3.0;
+                 System.Security.AccessControl|4.4.0;
+                 System.Security.Claims|4.3.0;
+                 System.Security.Cryptography.Algorithms|4.3.0;
+                 System.Security.Cryptography.Csp|4.3.0;
+                 System.Security.Cryptography.Encoding|4.3.0;
+                 System.Security.Cryptography.Primitives|4.3.0;
+                 System.Security.Cryptography.X509Certificates|4.3.0;
+                 System.Security.Cryptography.Xml|4.4.0;
+                 System.Security.Principal|4.3.0;
+                 System.Security.Principal.Windows|4.4.0;
+                 System.Text.Encoding|4.3.0;
+                 System.Text.Encoding.Extensions|4.3.0;
+                 System.Text.RegularExpressions|4.3.0;
+                 System.Threading|4.3.0;
+                 System.Threading.Overlapped|4.3.0;
+                 System.Threading.Tasks|4.3.0;
+                 System.Threading.Tasks.Extensions|4.3.0;
+                 System.Threading.Tasks.Parallel|4.3.0;
+                 System.Threading.Thread|4.3.0;
+                 System.Threading.ThreadPool|4.3.0;
+                 System.Threading.Timer|4.3.0;
+                 System.ValueTuple|4.3.0;
+                 System.Xml.ReaderWriter|4.3.0;
+                 System.Xml.XDocument|4.3.0;
+                 System.Xml.XmlDocument|4.3.0;
+                 System.Xml.XmlSerializer|4.3.0;
+                 System.Xml.XPath|4.3.0;
+                 System.Xml.XPath.XDocument|4.3.0;
+               
+         Task Parameter:
+             TargetFrameworkDirectories=
+                 C:\Users\ShaheerAhmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\
+                 C:\Users\ShaheerAhmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\Facades\
+         Output Item(s): 
+             _ReferencesWithoutConflicts=
+                 mscorlib
+                         Pack=false
+       Done executing task "ResolvePackageFileConflicts".
+       Removed Item(s): 
+           Reference=
+               mscorlib
+                       Pack=false
+       Added Item(s): 
+           Reference=
+               mscorlib
+                       Pack=false
+   1:7>Done building target "_HandlePackageFileConflicts" in project "PowerAppsToolsTemp_sa.cdsproj".
+   1:7>Target "ResolveAssemblyReferences" in file "C:\Program Files\dotnet\sdk\8.0.103\Microsoft.Common.CurrentVersion.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "ResolveReferences" depends on it):
+       Added Item(s): 
+           _ReferenceInstalledAssemblyDirectory=
+               C:\Users\ShaheerAhmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\
+               C:\Users\ShaheerAhmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\Facades\
+       Set Property: ResolveAssemblyReferencesStateFile=obj\Debug\PowerAppsToolsTemp_sa.cdsproj.AssemblyReference.cache
+       Set Property: ResolveAssemblyReferencesSilent=false
+       Set Property: ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch=Warning
+       Set Property: ResolveAssemblyReferencesFindRelatedSatellites=true
+       Set Property: ResolveAssemblyReferencesFindSerializationAssemblies=true
+       Set Property: ResolveAssemblyReferencesFindRelatedFiles=true
+       Set Property: ResolveAssemblyReferenceOutputUnresolvedAssemblyConflicts=false
+       Added Item(s): 
+           Reference=
+               System.Core
+                       Implicit=true
+       Set Property: FindDependenciesOfExternallyResolvedReferences=false
+       Task "ResolveAssemblyReference"
+         Task Parameter:TargetFrameworkVersion=v4.6.2
+         Task Parameter:StateFile=obj\Debug\PowerAppsToolsTemp_sa.cdsproj.AssemblyReference.cache
+         Task Parameter:AutoUnify=False
+         Task Parameter:TargetProcessorArchitecture=msil
+         Task Parameter:
+             CandidateAssemblyFiles=
+                 bin\Debug\PowerAppsToolsTemp_sa.zip
+                 C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\src\Other\Customizations.xml
+                 C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\src\Other\Relationships.xml
+                 C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\src\Other\Solution.xml
+         Task Parameter:OutputUnresolvedAssemblyConflicts=False
+         Task Parameter:
+             SearchPaths=
+                 {CandidateAssemblyFiles}
+                 {HintPathFromItem}
+                 {TargetFrameworkDirectory}
+                 {Registry:Software\Microsoft\.NETFramework,v4.6.2,AssemblyFoldersEx}
+                 {AssemblyFolders}
+                 {GAC}
+                 {RawFileName}
+                 bin\Debug\
+         Task Parameter:WarnOrErrorOnTargetArchitectureMismatch=Warning
+         Task Parameter:FullFrameworkFolders=C:\Users\ShaheerAhmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\
+         Task Parameter:FindDependenciesOfExternallyResolvedReferences=False
+         Task Parameter:
+             Assemblies=
+                 mscorlib
+                         Pack=false
+                 System.Core
+                         Implicit=true
+         Task Parameter:TargetFrameworkMonikerDisplayName=.NET Framework 4.6.2
+         Task Parameter:FindRelatedFiles=True
+         Task Parameter:
+             TargetFrameworkDirectories=
+                 C:\Users\ShaheerAhmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\
+                 C:\Users\ShaheerAhmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\Facades\
+         Task Parameter:TargetFrameworkMoniker=.NETFramework,Version=v4.6.2
+         Task Parameter:FullTargetFrameworkSubsetNames=Full
+         Task Parameter:
+             AllowedAssemblyExtensions=
+                 .winmd
+                 .dll
+                 .exe
+         Task Parameter:
+             AssemblyFiles=
+                 C:\repos\Advanced-Grid\out\controls\pcfaggrid.exe
+                         AdditionalPropertiesFromProject=
+                         BuildReference=true
+                         CopyUpToDateMarker=C:\repos\Advanced-Grid\obj\Debug\pcfaggrid.pcfproj.CopyComplete
+                         HasSingleTargetFramework=true
+                         IsRidAgnostic=true
+                         MSBuildSourceProjectFile=C:\repos\Advanced-Grid\pcfaggrid.pcfproj
+                         MSBuildSourceTargetName=GetTargetFrameworks
+                         NearestTargetFramework=net462
+                         OriginalItemSpec=..\..\pcfaggrid.pcfproj
+                         OriginalProjectReferenceItemSpec=..\..\pcfaggrid.pcfproj
+                         OutputItemType=
+                         Platform=AnyCPU
+                         Platforms=
+                         ReferenceOutputAssembly=true
+                         ReferenceSourceTarget=ProjectReference
+                         TargetFrameworkIdentifier=.NETFramework
+                         TargetFrameworkMonikers=.NETFramework,Version=v4.6.2
+                         TargetFrameworks=net462
+                         TargetFrameworkVersion=4.6.2
+                         TargetPlatformIdentifier=Windows
+                         TargetPlatformMoniker=Windows,Version=7.0
+                         TargetPlatformMonikers=Windows,Version=7.0
+                         Targets=
+                         UndefineProperties=;TargetFramework;RuntimeIdentifier;SelfContained
+         Task Parameter:SupportsBindingRedirectGeneration=True
+         Task Parameter:
+             AllowedRelatedFileExtensions=
+                 .pdb
+                 .xml
+                 .pri
+                 .dll.config
+                 .exe.config
+         Task Parameter:FindSerializationAssemblies=True
+         Task Parameter:Silent=False
+         Task Parameter:TargetedRuntimeVersion=v
+         Task Parameter:FindSatellites=True
+         Primary reference "pcfaggrid".
+             Could not find dependent files. Expected file "C:\repos\Advanced-Grid\out\controls\pcfaggrid.exe" does not exist.
+             Could not find dependent files. Expected file "C:\repos\Advanced-Grid\out\controls\pcfaggrid.exe" does not exist.
+             Resolved file path is "C:\repos\Advanced-Grid\out\controls\pcfaggrid.exe".
+             Reference found at search path location "".
+             The ImageRuntimeVersion for this reference is "".
+         Primary reference "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+             Resolved file path is "C:\Users\ShaheerAhmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\mscorlib.dll".
+             Reference found at search path location "{TargetFrameworkDirectory}".
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Users\ShaheerAhmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\mscorlib.winmd", but it didn't exist.
+             This reference is not "CopyLocal" because it's a prerequisite file.
+         Primary reference "System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+             Resolved file path is "C:\Users\ShaheerAhmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\System.Core.dll".
+             Reference found at search path location "{TargetFrameworkDirectory}".
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Users\ShaheerAhmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\System.Core.winmd", but it didn't exist.
+             This reference is not "CopyLocal" because it's a prerequisite file.
+         Output Item(s): 
+             ReferencePath=
+                 C:\Users\ShaheerAhmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\mscorlib.dll
+                         CopyLocal=false
+                         FrameworkFile=true
+                         FusionName=mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                         ImageRuntime=v4.0.30319
+                         OriginalItemSpec=mscorlib
+                         Pack=false
+                         Redist=Microsoft-Windows-CLRCoreComp.4.6.2
+                         ReferenceSourceTarget=ResolveAssemblyReference
+                         ResolvedFrom={TargetFrameworkDirectory}
+                         Version=4.0.0.0
+                 C:\repos\Advanced-Grid\out\controls\pcfaggrid.exe
+                         AdditionalPropertiesFromProject=
+                         BuildReference=true
+                         CopyLocal=true
+                         CopyUpToDateMarker=C:\repos\Advanced-Grid\obj\Debug\pcfaggrid.pcfproj.CopyComplete
+                         FusionName=pcfaggrid
+                         HasSingleTargetFramework=true
+                         IsRidAgnostic=true
+                         MSBuildSourceProjectFile=C:\repos\Advanced-Grid\pcfaggrid.pcfproj
+                         MSBuildSourceTargetName=GetTargetFrameworks
+                         NearestTargetFramework=net462
+                         OriginalItemSpec=C:\repos\Advanced-Grid\out\controls\pcfaggrid.exe
+                         OriginalProjectReferenceItemSpec=..\..\pcfaggrid.pcfproj
+                         OutputItemType=
+                         Platform=AnyCPU
+                         Platforms=
+                         ProjectReferenceOriginalItemSpec=..\..\pcfaggrid.pcfproj
+                         ReferenceOutputAssembly=true
+                         ReferenceSourceTarget=ProjectReference
+                         ResolvedFrom=
+                         TargetFrameworkIdentifier=.NETFramework
+                         TargetFrameworkMonikers=.NETFramework,Version=v4.6.2
+                         TargetFrameworks=net462
+                         TargetFrameworkVersion=4.6.2
+                         TargetPlatformIdentifier=Windows
+                         TargetPlatformMoniker=Windows,Version=7.0
+                         TargetPlatformMonikers=Windows,Version=7.0
+                         Targets=
+                         UndefineProperties=;TargetFramework;RuntimeIdentifier;SelfContained
+                         Version=
+                 C:\Users\ShaheerAhmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\System.Core.dll
+                         CopyLocal=false
+                         FrameworkFile=true
+                         FusionName=System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                         ImageRuntime=v4.0.30319
+                         Implicit=true
+                         OriginalItemSpec=System.Core
+                         Redist=Microsoft-Windows-CLRCoreComp.4.6.2
+                         ReferenceSourceTarget=ResolveAssemblyReference
+                         ResolvedFrom={TargetFrameworkDirectory}
+                         Version=4.0.0.0
+         Output Item(s): 
+             _ResolveAssemblyReferenceResolvedFiles=
+                 C:\Users\ShaheerAhmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\mscorlib.dll
+                         CopyLocal=false
+                         FrameworkFile=true
+                         FusionName=mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                         ImageRuntime=v4.0.30319
+                         OriginalItemSpec=mscorlib
+                         Pack=false
+                         Redist=Microsoft-Windows-CLRCoreComp.4.6.2
+                         ReferenceSourceTarget=ResolveAssemblyReference
+                         ResolvedFrom={TargetFrameworkDirectory}
+                         Version=4.0.0.0
+                 C:\repos\Advanced-Grid\out\controls\pcfaggrid.exe
+                         AdditionalPropertiesFromProject=
+                         BuildReference=true
+                         CopyLocal=true
+                         CopyUpToDateMarker=C:\repos\Advanced-Grid\obj\Debug\pcfaggrid.pcfproj.CopyComplete
+                         FusionName=pcfaggrid
+                         HasSingleTargetFramework=true
+                         IsRidAgnostic=true
+                         MSBuildSourceProjectFile=C:\repos\Advanced-Grid\pcfaggrid.pcfproj
+                         MSBuildSourceTargetName=GetTargetFrameworks
+                         NearestTargetFramework=net462
+                         OriginalItemSpec=C:\repos\Advanced-Grid\out\controls\pcfaggrid.exe
+                         OriginalProjectReferenceItemSpec=..\..\pcfaggrid.pcfproj
+                         OutputItemType=
+                         Platform=AnyCPU
+                         Platforms=
+                         ProjectReferenceOriginalItemSpec=..\..\pcfaggrid.pcfproj
+                         ReferenceOutputAssembly=true
+                         ReferenceSourceTarget=ProjectReference
+                         ResolvedFrom=
+                         TargetFrameworkIdentifier=.NETFramework
+                         TargetFrameworkMonikers=.NETFramework,Version=v4.6.2
+                         TargetFrameworks=net462
+                         TargetFrameworkVersion=4.6.2
+                         TargetPlatformIdentifier=Windows
+                         TargetPlatformMoniker=Windows,Version=7.0
+                         TargetPlatformMonikers=Windows,Version=7.0
+                         Targets=
+                         UndefineProperties=;TargetFramework;RuntimeIdentifier;SelfContained
+                         Version=
+                 C:\Users\ShaheerAhmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\System.Core.dll
+                         CopyLocal=false
+                         FrameworkFile=true
+                         FusionName=System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                         ImageRuntime=v4.0.30319
+                         Implicit=true
+                         OriginalItemSpec=System.Core
+                         Redist=Microsoft-Windows-CLRCoreComp.4.6.2
+                         ReferenceSourceTarget=ResolveAssemblyReference
+                         ResolvedFrom={TargetFrameworkDirectory}
+                         Version=4.0.0.0
+         Output Item(s): 
+             ReferenceCopyLocalPaths=
+                 C:\repos\Advanced-Grid\out\controls\pcfaggrid.exe
+                         AdditionalPropertiesFromProject=
+                         BuildReference=true
+                         CopyLocal=true
+                         CopyUpToDateMarker=C:\repos\Advanced-Grid\obj\Debug\pcfaggrid.pcfproj.CopyComplete
+                         FusionName=pcfaggrid
+                         HasSingleTargetFramework=true
+                         IsRidAgnostic=true
+                         MSBuildSourceProjectFile=C:\repos\Advanced-Grid\pcfaggrid.pcfproj
+                         MSBuildSourceTargetName=GetTargetFrameworks
+                         NearestTargetFramework=net462
+                         OriginalItemSpec=C:\repos\Advanced-Grid\out\controls\pcfaggrid.exe
+                         OriginalProjectReferenceItemSpec=..\..\pcfaggrid.pcfproj
+                         OutputItemType=
+                         Platform=AnyCPU
+                         Platforms=
+                         ProjectReferenceOriginalItemSpec=..\..\pcfaggrid.pcfproj
+                         ReferenceOutputAssembly=true
+                         ReferenceSourceTarget=ProjectReference
+                         ResolvedFrom=
+                         TargetFrameworkIdentifier=.NETFramework
+                         TargetFrameworkMonikers=.NETFramework,Version=v4.6.2
+                         TargetFrameworks=net462
+                         TargetFrameworkVersion=4.6.2
+                         TargetPlatformIdentifier=Windows
+                         TargetPlatformMoniker=Windows,Version=7.0
+                         TargetPlatformMonikers=Windows,Version=7.0
+                         Targets=
+                         UndefineProperties=;TargetFramework;RuntimeIdentifier;SelfContained
+                         Version=
+         Output Item(s): FileWrites=obj\Debug\PowerAppsToolsTemp_sa.cdsproj.AssemblyReference.cache
+         Output Property: DependsOnSystemRuntime=False
+         Output Property: _DependsOnNETStandard=False
+       Done executing task "ResolveAssemblyReference".
+       Target output items:
+           C:\Users\ShaheerAhmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\mscorlib.dll
+               ReferenceSourceTarget = ResolveAssemblyReference
+               Redist = Microsoft-Windows-CLRCoreComp.4.6.2
+               Version = 4.0.0.0
+               FrameworkFile = true
+               ResolvedFrom = {TargetFrameworkDirectory}
+               ImageRuntime = v4.0.30319
+               Pack = false
+               CopyLocal = false
+               OriginalItemSpec = mscorlib
+               FusionName = mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+           C:\repos\Advanced-Grid\out\controls\pcfaggrid.exe
+               ReferenceSourceTarget = ProjectReference
+               MSBuildSourceProjectFile = C:\repos\Advanced-Grid\pcfaggrid.pcfproj
+               HasSingleTargetFramework = true
+               TargetFrameworkIdentifier = .NETFramework
+               ReferenceOutputAssembly = true
+               Version = 
+               OutputItemType = 
+               TargetPlatformMonikers = Windows,Version=7.0
+               TargetPlatformMoniker = Windows,Version=7.0
+               ProjectReferenceOriginalItemSpec = ..\..\pcfaggrid.pcfproj
+               BuildReference = true
+               Platform = AnyCPU
+               CopyUpToDateMarker = C:\repos\Advanced-Grid\obj\Debug\pcfaggrid.pcfproj.CopyComplete
+               AdditionalPropertiesFromProject = 
+               TargetFrameworkMonikers = .NETFramework,Version=v4.6.2
+               TargetFrameworks = net462
+               IsRidAgnostic = true
+               MSBuildSourceTargetName = GetTargetFrameworks
+               ResolvedFrom = 
+               NearestTargetFramework = net462
+               UndefineProperties = ;TargetFramework;RuntimeIdentifier;SelfContained
+               OriginalProjectReferenceItemSpec = ..\..\pcfaggrid.pcfproj
+               TargetPlatformIdentifier = Windows
+               TargetFrameworkVersion = 4.6.2
+               Platforms = 
+               Targets = 
+               CopyLocal = true
+               OriginalItemSpec = C:\repos\Advanced-Grid\out\controls\pcfaggrid.exe
+               FusionName = pcfaggrid
+           C:\Users\ShaheerAhmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\System.Core.dll
+               ReferenceSourceTarget = ResolveAssemblyReference
+               Redist = Microsoft-Windows-CLRCoreComp.4.6.2
+               Version = 4.0.0.0
+               FrameworkFile = true
+               ResolvedFrom = {TargetFrameworkDirectory}
+               ImageRuntime = v4.0.30319
+               CopyLocal = false
+               OriginalItemSpec = System.Core
+               FusionName = System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+               Implicit = true
+   1:7>Done building target "ResolveAssemblyReferences" in project "PowerAppsToolsTemp_sa.cdsproj".
+       Target "GenerateBindingRedirects" skipped, due to false condition; ('$(AutoGenerateBindingRedirects)' == 'true' and '$(GenerateBindingRedirectsOutputType)' == 'true' and '@(SuggestedBindingRedirects)' != '' and '$(DesignTimeBuild)' != 'true' and '$(BuildingProject)' == 'true') was evaluated as ('' == 'true' and 'true' == 'true' and '' != '' and '' != 'true' and 'true' == 'true').
+       Target "_RemoveZipFileSuggestedRedirect" skipped, due to false condition; ('$(_TargetFrameworkVersionWithoutV)' >= '4.7.1' And '$(AllowZipFileRedirect)' != 'true') was evaluated as ('4.6.2' >= '4.7.1' And '' != 'true').
+       Target "GenerateBindingRedirectsUpdateAppConfig" skipped, due to false condition; ('$(AutoGenerateBindingRedirects)' == 'true' and '$(GenerateBindingRedirectsOutputType)' == 'true') was evaluated as ('' == 'true' and 'true' == 'true').
+       Target "ResolveComReferences" skipped, due to false condition; ('@(COMReference)'!='' or '@(COMFileReference)'!='') was evaluated as (''!='' or ''!='').
+   1:7>Target "AfterResolveReferences" in file "C:\Program Files\dotnet\sdk\8.0.103\Microsoft.Common.CurrentVersion.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "ResolveReferences" depends on it):
+   1:7>Done building target "AfterResolveReferences" in project "PowerAppsToolsTemp_sa.cdsproj".
+       Target "GetReferenceAssemblyPaths" skipped. Previously built successfully.
+   1:7>Target "ImplicitlyExpandDesignTimeFacades" in file "C:\Program Files\dotnet\sdk\8.0.103\Microsoft.NETFramework.CurrentVersion.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "ResolveReferences" depends on it):
+   1:7>Done building target "ImplicitlyExpandDesignTimeFacades" in project "PowerAppsToolsTemp_sa.cdsproj".
+   1:7>Target "ResolveReferences" in file "C:\Program Files\dotnet\sdk\8.0.103\Microsoft.Common.CurrentVersion.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "CoreBuild" depends on it):
+       Target output items:
+           C:\Users\ShaheerAhmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\mscorlib.dll
+               ReferenceSourceTarget = ResolveAssemblyReference
+               Redist = Microsoft-Windows-CLRCoreComp.4.6.2
+               Version = 4.0.0.0
+               FrameworkFile = true
+               ResolvedFrom = {TargetFrameworkDirectory}
+               ImageRuntime = v4.0.30319
+               Pack = false
+               CopyLocal = false
+               OriginalItemSpec = mscorlib
+               FusionName = mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+           C:\repos\Advanced-Grid\out\controls\pcfaggrid.exe
+               ReferenceSourceTarget = ProjectReference
+               MSBuildSourceProjectFile = C:\repos\Advanced-Grid\pcfaggrid.pcfproj
+               HasSingleTargetFramework = true
+               TargetFrameworkIdentifier = .NETFramework
+               ReferenceOutputAssembly = true
+               Version = 
+               OutputItemType = 
+               TargetPlatformMonikers = Windows,Version=7.0
+               TargetPlatformMoniker = Windows,Version=7.0
+               ProjectReferenceOriginalItemSpec = ..\..\pcfaggrid.pcfproj
+               BuildReference = true
+               Platform = AnyCPU
+               CopyUpToDateMarker = C:\repos\Advanced-Grid\obj\Debug\pcfaggrid.pcfproj.CopyComplete
+               AdditionalPropertiesFromProject = 
+               TargetFrameworkMonikers = .NETFramework,Version=v4.6.2
+               TargetFrameworks = net462
+               IsRidAgnostic = true
+               MSBuildSourceTargetName = GetTargetFrameworks
+               ResolvedFrom = 
+               NearestTargetFramework = net462
+               UndefineProperties = ;TargetFramework;RuntimeIdentifier;SelfContained
+               OriginalProjectReferenceItemSpec = ..\..\pcfaggrid.pcfproj
+               TargetPlatformIdentifier = Windows
+               TargetFrameworkVersion = 4.6.2
+               Platforms = 
+               Targets = 
+               CopyLocal = true
+               OriginalItemSpec = C:\repos\Advanced-Grid\out\controls\pcfaggrid.exe
+               FusionName = pcfaggrid
+           C:\Users\ShaheerAhmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\System.Core.dll
+               ReferenceSourceTarget = ResolveAssemblyReference
+               Redist = Microsoft-Windows-CLRCoreComp.4.6.2
+               Version = 4.0.0.0
+               FrameworkFile = true
+               ResolvedFrom = {TargetFrameworkDirectory}
+               ImageRuntime = v4.0.30319
+               CopyLocal = false
+               OriginalItemSpec = System.Core
+               FusionName = System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+               Implicit = true
+   1:7>Done building target "ResolveReferences" in project "PowerAppsToolsTemp_sa.cdsproj".
+   1:7>Target "AssignTargetPaths" in file "C:\Program Files\dotnet\sdk\8.0.103\Microsoft.Common.CurrentVersion.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "PrepareResourceNames" depends on it):
+       Task "AssignTargetPath"
+         Task Parameter:RootFolder=C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa
+       Done executing task "AssignTargetPath".
+       Task "AssignTargetPath"
+         Task Parameter:
+             Files=
+                 bin\Debug\PowerAppsToolsTemp_sa.zip
+                         CopyToOutputDirectory=PreserveNewest
+         Task Parameter:RootFolder=C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa
+         Output Item(s): 
+             ContentWithTargetPath=
+                 bin\Debug\PowerAppsToolsTemp_sa.zip
+                         CopyToOutputDirectory=PreserveNewest
+                         OriginalItemSpec=bin\Debug\PowerAppsToolsTemp_sa.zip
+                         TargetPath=bin\Debug\PowerAppsToolsTemp_sa.zip
+       Done executing task "AssignTargetPath".
+       Task "AssignTargetPath"
+         Task Parameter:
+             Files=
+                 C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\src\Other\Customizations.xml
+                 C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\src\Other\Relationships.xml
+                 C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\src\Other\Solution.xml
+         Task Parameter:RootFolder=C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa
+         Output Item(s): 
+             _NoneWithTargetPath=
+                 C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\src\Other\Customizations.xml
+                         OriginalItemSpec=C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\src\Other\Customizations.xml
+                         TargetPath=src\Other\Customizations.xml
+                 C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\src\Other\Relationships.xml
+                         OriginalItemSpec=C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\src\Other\Relationships.xml
+                         TargetPath=src\Other\Relationships.xml
+                 C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\src\Other\Solution.xml
+                         OriginalItemSpec=C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\src\Other\Solution.xml
+                         TargetPath=src\Other\Solution.xml
+       Done executing task "AssignTargetPath".
+       Task "AssignTargetPath"
+         Task Parameter:RootFolder=C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa
+       Done executing task "AssignTargetPath".
+       Task "AssignTargetPath" skipped, due to false condition; ('@(_DeploymentBaseManifestWithTargetPath)'=='' and '%(None.Extension)'=='.manifest') was evaluated as (''=='' and '.xml'=='.manifest').
+   1:7>Done building target "AssignTargetPaths" in project "PowerAppsToolsTemp_sa.cdsproj".
+       Target "AssignTargetPaths" skipped. Previously built successfully.
+   1:7>Target "SplitResourcesByCulture" in file "C:\Program Files\dotnet\sdk\8.0.103\Microsoft.Common.CurrentVersion.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "PrepareResourceNames" depends on it):
+       Task "Warning" skipped, due to false condition; ('@(ResxWithNoCulture)'!='') was evaluated as (''!='').
+       Task "Warning" skipped, due to false condition; ('@(ResxWithCulture)'!='') was evaluated as (''!='').
+       Task "Warning" skipped, due to false condition; ('@(NonResxWithCulture)'!='') was evaluated as (''!='').
+       Task "Warning" skipped, due to false condition; ('@(NonResxWithNoCulture)'!='') was evaluated as (''!='').
+       Task "AssignCulture"
+       Done executing task "AssignCulture".
+   1:7>Done building target "SplitResourcesByCulture" in project "PowerAppsToolsTemp_sa.cdsproj".
+   1:7>Target "CreateManifestResourceNames" in file "C:\Users\ShaheerAhmad\.nuget\packages\microsoft.powerapps.msbuild.solution\1.31.2\build\Microsoft.PowerApps.MSBuild.Solution.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "PrepareResourceNames" depends on it):
+   1:7>Done building target "CreateManifestResourceNames" in project "PowerAppsToolsTemp_sa.cdsproj".
+   1:7>Target "CreateCustomManifestResourceNames" in file "C:\Program Files\dotnet\sdk\8.0.103\Microsoft.Common.CurrentVersion.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "PrepareResourceNames" depends on it):
+   1:7>Done building target "CreateCustomManifestResourceNames" in project "PowerAppsToolsTemp_sa.cdsproj".
+   1:7>Target "PrepareResourceNames" in file "C:\Program Files\dotnet\sdk\8.0.103\Microsoft.Common.CurrentVersion.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "PrepareResources" depends on it):
+   1:7>Done building target "PrepareResourceNames" in project "PowerAppsToolsTemp_sa.cdsproj".
+       Target "ResolveAssemblyReferences" skipped. Previously built successfully.
+       Target "SplitResourcesByCulture" skipped. Previously built successfully.
+   1:7>Target "BeforeResGen" in file "C:\Program Files\dotnet\sdk\8.0.103\Microsoft.Common.CurrentVersion.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "ResGen" depends on it):
+   1:7>Done building target "BeforeResGen" in project "PowerAppsToolsTemp_sa.cdsproj".
+       Target "ResolveReferences" skipped. Previously built successfully.
+   1:7>Target "FindReferenceAssembliesForReferences" in file "C:\Program Files\dotnet\sdk\8.0.103\Microsoft.Common.CurrentVersion.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "CoreResGen" depends on it):
+       Added Item(s): 
+           ReferencePathWithRefAssemblies=
+               C:\Users\ShaheerAhmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\mscorlib.dll
+                       CopyLocal=false
+                       FrameworkFile=true
+                       FusionName=mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                       ImageRuntime=v4.0.30319
+                       OriginalItemSpec=mscorlib
+                       Pack=false
+                       Redist=Microsoft-Windows-CLRCoreComp.4.6.2
+                       ReferenceAssembly=C:\Users\ShaheerAhmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\mscorlib.dll
+                       ReferenceSourceTarget=ResolveAssemblyReference
+                       ResolvedFrom={TargetFrameworkDirectory}
+                       Version=4.0.0.0
+       Added Item(s): 
+           ReferencePathWithRefAssemblies=
+               C:\repos\Advanced-Grid\out\controls\pcfaggrid.exe
+                       AdditionalPropertiesFromProject=
+                       BuildReference=true
+                       CopyLocal=true
+                       CopyUpToDateMarker=C:\repos\Advanced-Grid\obj\Debug\pcfaggrid.pcfproj.CopyComplete
+                       FusionName=pcfaggrid
+                       HasSingleTargetFramework=true
+                       IsRidAgnostic=true
+                       MSBuildSourceProjectFile=C:\repos\Advanced-Grid\pcfaggrid.pcfproj
+                       MSBuildSourceTargetName=GetTargetFrameworks
+                       NearestTargetFramework=net462
+                       OriginalItemSpec=C:\repos\Advanced-Grid\out\controls\pcfaggrid.exe
+                       OriginalProjectReferenceItemSpec=..\..\pcfaggrid.pcfproj
+                       OutputItemType=
+                       Platform=AnyCPU
+                       Platforms=
+                       ProjectReferenceOriginalItemSpec=..\..\pcfaggrid.pcfproj
+                       ReferenceAssembly=C:\repos\Advanced-Grid\out\controls\pcfaggrid.exe
+                       ReferenceOutputAssembly=true
+                       ReferenceSourceTarget=ProjectReference
+                       ResolvedFrom=
+                       TargetFrameworkIdentifier=.NETFramework
+                       TargetFrameworkMonikers=.NETFramework,Version=v4.6.2
+                       TargetFrameworks=net462
+                       TargetFrameworkVersion=4.6.2
+                       TargetPlatformIdentifier=Windows
+                       TargetPlatformMoniker=Windows,Version=7.0
+                       TargetPlatformMonikers=Windows,Version=7.0
+                       Targets=
+                       UndefineProperties=;TargetFramework;RuntimeIdentifier;SelfContained
+                       Version=
+       Added Item(s): 
+           ReferencePathWithRefAssemblies=
+               C:\Users\ShaheerAhmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\System.Core.dll
+                       CopyLocal=false
+                       FrameworkFile=true
+                       FusionName=System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                       ImageRuntime=v4.0.30319
+                       Implicit=true
+                       OriginalItemSpec=System.Core
+                       Redist=Microsoft-Windows-CLRCoreComp.4.6.2
+                       ReferenceAssembly=C:\Users\ShaheerAhmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\System.Core.dll
+                       ReferenceSourceTarget=ResolveAssemblyReference
+                       ResolvedFrom={TargetFrameworkDirectory}
+                       Version=4.0.0.0
+   1:7>Done building target "FindReferenceAssembliesForReferences" in project "PowerAppsToolsTemp_sa.cdsproj".
+   1:7>Target "CoreResGen" in file "C:\Program Files\dotnet\sdk\8.0.103\Microsoft.Common.CurrentVersion.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "ResGen" depends on it):
+       Set Property: GenerateResourceMSBuildArchitecture=x86
+       Set Property: ResgenToolPath=
+       Task "GenerateResource" skipped, due to false condition; ('%(EmbeddedResource.Type)' == 'Resx' and '%(EmbeddedResource.GenerateResource)' != 'false' and '$(GenerateResourceMSBuildRuntime)' != 'CLR2') was evaluated as ('' == 'Resx' and '' != 'false' and '' != 'CLR2').
+       Task "GenerateResource" skipped, due to false condition; ('%(EmbeddedResource.Type)' == 'Resx' and '%(EmbeddedResource.GenerateResource)' != 'false' and '$(GenerateResourceMSBuildRuntime)' == 'CLR2') was evaluated as ('' == 'Resx' and '' != 'false' and '' == 'CLR2').
+   1:7>Done building target "CoreResGen" in project "PowerAppsToolsTemp_sa.cdsproj".
+   1:7>Target "AfterResGen" in file "C:\Program Files\dotnet\sdk\8.0.103\Microsoft.Common.CurrentVersion.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "ResGen" depends on it):
+   1:7>Done building target "AfterResGen" in project "PowerAppsToolsTemp_sa.cdsproj".
+   1:7>Target "ResGen" in file "C:\Program Files\dotnet\sdk\8.0.103\Microsoft.Common.CurrentVersion.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "PrepareResources" depends on it):
+   1:7>Done building target "ResGen" in project "PowerAppsToolsTemp_sa.cdsproj".
+       Target "CompileLicxFiles" skipped, due to false condition; ('@(_LicxFile)'!='') was evaluated as (''!='').
+   1:7>Target "PrepareResources" in file "C:\Program Files\dotnet\sdk\8.0.103\Microsoft.Common.CurrentVersion.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "CoreBuild" depends on it):
+   1:7>Done building target "PrepareResources" in project "PowerAppsToolsTemp_sa.cdsproj".
+       Target "ResolveKeySource" skipped, due to false condition; ($(SignManifests) == 'true' or $(SignAssembly) == 'true') was evaluated as ( == 'true' or  == 'true').
+       Target "ResolveReferences" skipped. Previously built successfully.
+       Target "ResolveKeySource" skipped, due to false condition; ($(SignManifests) == 'true' or $(SignAssembly) == 'true') was evaluated as ( == 'true' or  == 'true').
+       Target "ResolveComReferences" skipped, due to false condition; ('@(COMReference)'!='' or '@(COMFileReference)'!='') was evaluated as (''!='' or ''!='').
+       Target "ResolveNativeReferences" skipped, due to false condition; ('@(NativeReference)'!='') was evaluated as (''!='').
+       Target "_SetExternalWin32ManifestProperties" skipped, due to false condition; ('$(GenerateClickOnceManifests)'=='true' or '@(NativeReference)'!='' or '@(ResolvedIsolatedComModules)'!='') was evaluated as (''=='true' or ''!='' or ''!='').
+   1:7>Target "_SetEmbeddedWin32ManifestProperties" in file "C:\Program Files\dotnet\sdk\8.0.103\Microsoft.Common.CurrentVersion.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "SetWin32ManifestProperties" depends on it):
+       Set Property: EmbeddedWin32Manifest=
+       Set Property: Win32Manifest=
+       Task "GetFrameworkPath"
+       Done executing task "GetFrameworkPath".
+   1:7>Done building target "_SetEmbeddedWin32ManifestProperties" in project "PowerAppsToolsTemp_sa.cdsproj".
+   1:7>Target "SetWin32ManifestProperties" in file "C:\Program Files\dotnet\sdk\8.0.103\Microsoft.Common.CurrentVersion.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "Compile" depends on it):
+   1:7>Done building target "SetWin32ManifestProperties" in project "PowerAppsToolsTemp_sa.cdsproj".
+       Target "FindReferenceAssembliesForReferences" skipped. Previously built successfully.
+   1:7>Target "_GenerateCompileInputs" in file "C:\Program Files\dotnet\sdk\8.0.103\Microsoft.Common.CurrentVersion.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "Compile" depends on it):
+       Task "Warning" skipped, due to false condition; ('@(ManifestResourceWithNoCulture)'!='' and '%(ManifestResourceWithNoCulture.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
+       Task "Warning" skipped, due to false condition; ('@(ManifestNonResxWithNoCultureOnDisk)'!='' and '%(ManifestNonResxWithNoCultureOnDisk.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
+   1:7>Done building target "_GenerateCompileInputs" in project "PowerAppsToolsTemp_sa.cdsproj".
+       Target "GenerateTargetFrameworkMonikerAttribute" skipped, due to false condition; ('@(Compile)' != '' and '$(GenerateTargetFrameworkAttribute)' == 'true') was evaluated as ('' != '' and 'true' == 'true').
+       Target "GenerateAdditionalSources" skipped, due to false condition; ('@(AssemblyAttributes)' != '' and '$(GenerateAdditionalSources)' == 'true') was evaluated as ('' != '' and '' == 'true').
+   1:7>Target "BeforeCompile" in file "C:\Program Files\dotnet\sdk\8.0.103\Microsoft.Common.CurrentVersion.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "Compile" depends on it):
+   1:7>Done building target "BeforeCompile" in project "PowerAppsToolsTemp_sa.cdsproj".
+       Target "_TimeStampBeforeCompile" skipped, due to false condition; ('$(RunPostBuildEvent)'=='OnOutputUpdated' or ('$(RegisterForComInterop)'=='true' and '$(OutputType)'=='library')) was evaluated as (''=='OnOutputUpdated' or (''=='true' and 'exe'=='library')).
+       Target "ResolveAssemblyReferences" skipped. Previously built successfully.
+   1:7>Target "_GenerateCompileDependencyCache" in file "C:\Program Files\dotnet\sdk\8.0.103\Microsoft.Common.CurrentVersion.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "Compile" depends on it):
+       Added Item(s): CustomAdditionalCompileInputs=obj\Debug\PowerAppsToolsTemp_sa.cdsproj.CoreCompileInputs.cache
+       Added Item(s): 
+           CoreCompileCache=
+               C:\Users\ShaheerAhmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\mscorlib.dll
+                       CopyLocal=false
+                       FrameworkFile=true
+                       FusionName=mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                       ImageRuntime=v4.0.30319
+                       OriginalItemSpec=mscorlib
+                       Pack=false
+                       Redist=Microsoft-Windows-CLRCoreComp.4.6.2
+                       ReferenceAssembly=C:\Users\ShaheerAhmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\mscorlib.dll
+                       ReferenceSourceTarget=ResolveAssemblyReference
+                       ResolvedFrom={TargetFrameworkDirectory}
+                       Version=4.0.0.0
+               C:\repos\Advanced-Grid\out\controls\pcfaggrid.exe
+                       AdditionalPropertiesFromProject=
+                       BuildReference=true
+                       CopyLocal=true
+                       CopyUpToDateMarker=C:\repos\Advanced-Grid\obj\Debug\pcfaggrid.pcfproj.CopyComplete
+                       FusionName=pcfaggrid
+                       HasSingleTargetFramework=true
+                       IsRidAgnostic=true
+                       MSBuildSourceProjectFile=C:\repos\Advanced-Grid\pcfaggrid.pcfproj
+                       MSBuildSourceTargetName=GetTargetFrameworks
+                       NearestTargetFramework=net462
+                       OriginalItemSpec=C:\repos\Advanced-Grid\out\controls\pcfaggrid.exe
+                       OriginalProjectReferenceItemSpec=..\..\pcfaggrid.pcfproj
+                       OutputItemType=
+                       Platform=AnyCPU
+                       Platforms=
+                       ProjectReferenceOriginalItemSpec=..\..\pcfaggrid.pcfproj
+                       ReferenceAssembly=C:\repos\Advanced-Grid\out\controls\pcfaggrid.exe
+                       ReferenceOutputAssembly=true
+                       ReferenceSourceTarget=ProjectReference
+                       ResolvedFrom=
+                       TargetFrameworkIdentifier=.NETFramework
+                       TargetFrameworkMonikers=.NETFramework,Version=v4.6.2
+                       TargetFrameworks=net462
+                       TargetFrameworkVersion=4.6.2
+                       TargetPlatformIdentifier=Windows
+                       TargetPlatformMoniker=Windows,Version=7.0
+                       TargetPlatformMonikers=Windows,Version=7.0
+                       Targets=
+                       UndefineProperties=;TargetFramework;RuntimeIdentifier;SelfContained
+                       Version=
+               C:\Users\ShaheerAhmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\System.Core.dll
+                       CopyLocal=false
+                       FrameworkFile=true
+                       FusionName=System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                       ImageRuntime=v4.0.30319
+                       Implicit=true
+                       OriginalItemSpec=System.Core
+                       Redist=Microsoft-Windows-CLRCoreComp.4.6.2
+                       ReferenceAssembly=C:\Users\ShaheerAhmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\System.Core.dll
+                       ReferenceSourceTarget=ResolveAssemblyReference
+                       ResolvedFrom={TargetFrameworkDirectory}
+                       Version=4.0.0.0
+       Task "Hash"
+         Task Parameter:IgnoreCase=True
+         Task Parameter:
+             ItemsToHash=
+                 C:\Users\ShaheerAhmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\mscorlib.dll
+                 C:\repos\Advanced-Grid\out\controls\pcfaggrid.exe
+                 C:\Users\ShaheerAhmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\System.Core.dll
+         Output Property: CoreCompileDependencyHash=c9f3552bc8664cf24ddcc81e0b40c87599749791ddeaf7673996f42d4d150267
+       Done executing task "Hash".
+       Task "WriteLinesToFile"
+         Task Parameter:Overwrite=True
+         Task Parameter:File=obj\Debug\PowerAppsToolsTemp_sa.cdsproj.CoreCompileInputs.cache
+         Task Parameter:Lines=c9f3552bc8664cf24ddcc81e0b40c87599749791ddeaf7673996f42d4d150267
+         Task Parameter:WriteOnlyWhenDifferent=True
+       Done executing task "WriteLinesToFile".
+       Added Item(s): FileWrites=obj\Debug\PowerAppsToolsTemp_sa.cdsproj.CoreCompileInputs.cache
+   1:7>Done building target "_GenerateCompileDependencyCache" in project "PowerAppsToolsTemp_sa.cdsproj".
+   1:7>Target "CoreCompile" in file "C:\Users\ShaheerAhmad\.nuget\packages\microsoft.powerapps.msbuild.solution\1.31.2\build\Microsoft.PowerApps.MSBuild.Solution.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "Compile" depends on it):
+   1:7>Done building target "CoreCompile" in project "PowerAppsToolsTemp_sa.cdsproj".
+       Target "_TimeStampAfterCompile" skipped, due to false condition; ('$(RunPostBuildEvent)'=='OnOutputUpdated' or ('$(RegisterForComInterop)'=='true' and '$(OutputType)'=='library')) was evaluated as (''=='OnOutputUpdated' or (''=='true' and 'exe'=='library')).
+   1:7>Target "AfterCompile" in file "C:\Program Files\dotnet\sdk\8.0.103\Microsoft.Common.CurrentVersion.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "Compile" depends on it):
+   1:7>Done building target "AfterCompile" in project "PowerAppsToolsTemp_sa.cdsproj".
+   1:7>Target "Compile" in file "C:\Program Files\dotnet\sdk\8.0.103\Microsoft.Common.CurrentVersion.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "CoreBuild" depends on it):
+   1:7>Done building target "Compile" in project "PowerAppsToolsTemp_sa.cdsproj".
+       Target "ExportWindowsMDFile" skipped, due to false condition; ('$(ExportWinMDFile)' == 'true') was evaluated as ('' == 'true').
+       Target "UnmanagedUnregistration" skipped, due to false condition; ((('$(_AssemblyTimestampBeforeCompile)' != '$(_AssemblyTimestampAfterCompile)' or '$(RegisterForComInterop)' != 'true' or '$(OutputType)' != 'library') or
+                           ('$(_AssemblyTimestampBeforeCompile)' == '')) and
+                          Exists('@(_UnmanagedRegistrationCache)')) was evaluated as ((('' != '' or '' != 'true' or 'exe' != 'library') or
+                           ('' == '')) and
+                          Exists('obj\PowerAppsToolsTemp_sa.cdsproj.UnmanagedRegistration.cache')).
+       Target "GenerateSerializationAssemblies" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Off' == 'On' or (''!='' and 'Off' == 'Auto')).
+   1:7>Target "_GenerateSatelliteAssemblyInputs" in file "C:\Program Files\dotnet\sdk\8.0.103\Microsoft.Common.CurrentVersion.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "CreateSatelliteAssemblies" depends on it):
+       Task "Warning" skipped, due to false condition; ('@(ManifestResourceWithCulture)'!='' and '%(ManifestResourceWithCulture.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
+       Task "Warning" skipped, due to false condition; ('@(ManifestNonResxWithCultureOnDisk)'!='' and '%(ManifestNonResxWithCultureOnDisk.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
+   1:7>Done building target "_GenerateSatelliteAssemblyInputs" in project "PowerAppsToolsTemp_sa.cdsproj".
+       Target "ComputeIntermediateSatelliteAssemblies" skipped, due to false condition; (@(EmbeddedResource->'%(WithCulture)') != '') was evaluated as ( != '').
+       Target "GenerateSatelliteAssemblies" skipped, due to false condition; ('@(_SatelliteAssemblyResourceInputs)' != '' and '$(GenerateSatelliteAssembliesForCore)' != 'true') was evaluated as ('' != '' and '' != 'true').
+   1:7>Target "CreateSatelliteAssemblies" in file "C:\Program Files\dotnet\sdk\8.0.103\Microsoft.Common.CurrentVersion.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "CoreBuild" depends on it):
+   1:7>Done building target "CreateSatelliteAssemblies" in project "PowerAppsToolsTemp_sa.cdsproj".
+       Target "GenerateManifests" skipped, due to false condition; ('$(GenerateClickOnceManifests)'=='true' or '@(NativeReference)'!='' or '@(ResolvedIsolatedComModules)'!='' or '$(GenerateAppxManifest)' == 'true') was evaluated as (''=='true' or ''!='' or ''!='' or '' == 'true').
+   1:7>Target "GetTargetPathWithTargetPlatformMoniker" in file "C:\Program Files\dotnet\sdk\8.0.103\Microsoft.Common.CurrentVersion.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "GetTargetPath" depends on it):
+       Added Item(s): 
+           TargetPathWithTargetPlatformMoniker=
+               C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\bin\Debug\PowerAppsToolsTemp_sa.exe
+                       CopyUpToDateMarker=C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\obj\Debug\PowerAppsToolsTemp_sa.cdsproj.CopyComplete
+                       TargetFrameworkIdentifier=.NETFramework
+                       TargetFrameworkVersion=4.6.2
+                       TargetPlatformIdentifier=Windows
+                       TargetPlatformMoniker=Windows,Version=7.0
+       Target output items:
+           C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\bin\Debug\PowerAppsToolsTemp_sa.exe
+               TargetFrameworkIdentifier = .NETFramework
+               TargetPlatformMoniker = Windows,Version=7.0
+               CopyUpToDateMarker = C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\obj\Debug\PowerAppsToolsTemp_sa.cdsproj.CopyComplete
+               TargetPlatformIdentifier = Windows
+               TargetFrameworkVersion = 4.6.2
+   1:7>Done building target "GetTargetPathWithTargetPlatformMoniker" in project "PowerAppsToolsTemp_sa.cdsproj".
+   1:7>Target "GetTargetPath" in file "C:\Program Files\dotnet\sdk\8.0.103\Microsoft.Common.CurrentVersion.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "CoreBuild" depends on it):
+       Target output items:
+           C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\bin\Debug\PowerAppsToolsTemp_sa.exe
+               TargetFrameworkIdentifier = .NETFramework
+               TargetPlatformMoniker = Windows,Version=7.0
+               CopyUpToDateMarker = C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\obj\Debug\PowerAppsToolsTemp_sa.cdsproj.CopyComplete
+               TargetPlatformIdentifier = Windows
+               TargetFrameworkVersion = 4.6.2
+   1:7>Done building target "GetTargetPath" in project "PowerAppsToolsTemp_sa.cdsproj".
+   1:7>Target "CopyFilesToOutputDirectory" in file "C:\Users\ShaheerAhmad\.nuget\packages\microsoft.powerapps.msbuild.solution\1.31.2\build\Microsoft.PowerApps.MSBuild.Solution.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "PrepareForRun" depends on it):
+   1:7>Done building target "CopyFilesToOutputDirectory" in project "PowerAppsToolsTemp_sa.cdsproj".
+   1:7>Target "PrepareForRun" in file "C:\Program Files\dotnet\sdk\8.0.103\Microsoft.Common.CurrentVersion.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "CoreBuild" depends on it):
+   1:7>Done building target "PrepareForRun" in project "PowerAppsToolsTemp_sa.cdsproj".
+       Target "UnmanagedRegistration" skipped, due to false condition; ('$(RegisterForComInterop)'=='true' and '$(OutputType)'=='library') was evaluated as (''=='true' and 'exe'=='library').
+   1:7>Target "_CheckForCompileOutputs" in file "C:\Program Files\dotnet\sdk\8.0.103\Microsoft.Common.CurrentVersion.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "_CleanGetCurrentAndPriorFileWrites" depends on it):
+       Set Property: _DocumentationFileProduced=false
+       Set Property: _DebugSymbolsProduced=false
+   1:7>Done building target "_CheckForCompileOutputs" in project "PowerAppsToolsTemp_sa.cdsproj".
+       Target "_SGenCheckForOutputs" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Off' == 'On' or (''!='' and 'Off' == 'Auto')).
+   1:7>Target "_CleanGetCurrentAndPriorFileWrites" in file "C:\Program Files\dotnet\sdk\8.0.103\Microsoft.Common.CurrentVersion.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "IncrementalClean" depends on it):
+       Task "ReadLinesFromFile"
+         Task Parameter:File=obj\Debug\PowerAppsToolsTemp_sa.cdsproj.FileListAbsolute.txt
+       Done executing task "ReadLinesFromFile".
+       Task "ConvertToAbsolutePath"
+         Task Parameter:
+             Paths=
+                 C:\Users\ShaheerAhmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\mscorlib.dll
+                         CopyLocal=false
+                         FrameworkFile=true
+                         FusionName=mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                         ImageRuntime=v4.0.30319
+                         OriginalItemSpec=mscorlib
+                         Pack=false
+                         Redist=Microsoft-Windows-CLRCoreComp.4.6.2
+                         ReferenceSourceTarget=ResolveAssemblyReference
+                         ResolvedFrom={TargetFrameworkDirectory}
+                         Version=4.0.0.0
+                 C:\repos\Advanced-Grid\out\controls\pcfaggrid.exe
+                         AdditionalPropertiesFromProject=
+                         BuildReference=true
+                         CopyLocal=true
+                         CopyUpToDateMarker=C:\repos\Advanced-Grid\obj\Debug\pcfaggrid.pcfproj.CopyComplete
+                         FusionName=pcfaggrid
+                         HasSingleTargetFramework=true
+                         IsRidAgnostic=true
+                         MSBuildSourceProjectFile=C:\repos\Advanced-Grid\pcfaggrid.pcfproj
+                         MSBuildSourceTargetName=GetTargetFrameworks
+                         NearestTargetFramework=net462
+                         OriginalItemSpec=C:\repos\Advanced-Grid\out\controls\pcfaggrid.exe
+                         OriginalProjectReferenceItemSpec=..\..\pcfaggrid.pcfproj
+                         OutputItemType=
+                         Platform=AnyCPU
+                         Platforms=
+                         ProjectReferenceOriginalItemSpec=..\..\pcfaggrid.pcfproj
+                         ReferenceOutputAssembly=true
+                         ReferenceSourceTarget=ProjectReference
+                         ResolvedFrom=
+                         TargetFrameworkIdentifier=.NETFramework
+                         TargetFrameworkMonikers=.NETFramework,Version=v4.6.2
+                         TargetFrameworks=net462
+                         TargetFrameworkVersion=4.6.2
+                         TargetPlatformIdentifier=Windows
+                         TargetPlatformMoniker=Windows,Version=7.0
+                         TargetPlatformMonikers=Windows,Version=7.0
+                         Targets=
+                         UndefineProperties=;TargetFramework;RuntimeIdentifier;SelfContained
+                         Version=
+                 C:\Users\ShaheerAhmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\System.Core.dll
+                         CopyLocal=false
+                         FrameworkFile=true
+                         FusionName=System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                         ImageRuntime=v4.0.30319
+                         Implicit=true
+                         OriginalItemSpec=System.Core
+                         Redist=Microsoft-Windows-CLRCoreComp.4.6.2
+                         ReferenceSourceTarget=ResolveAssemblyReference
+                         ResolvedFrom={TargetFrameworkDirectory}
+                         Version=4.0.0.0
+         Output Item(s): 
+             _ResolveAssemblyReferenceResolvedFilesAbsolute=
+                 C:\Users\ShaheerAhmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\mscorlib.dll
+                 C:\repos\Advanced-Grid\out\controls\pcfaggrid.exe
+                 C:\Users\ShaheerAhmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\System.Core.dll
+       Done executing task "ConvertToAbsolutePath".
+       Task "FindUnderPath"
+         Task Parameter:Path=C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa
+         Task Parameter:UpdateToAbsolutePaths=True
+         Comparison path is "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa".
+       Done executing task "FindUnderPath".
+       Task "FindUnderPath"
+         Task Parameter:Path=bin\Debug\
+         Task Parameter:
+             Files=
+                 obj\Debug\PowerAppsToolsTemp_sa.cdsproj.AssemblyReference.cache
+                 obj\Debug\PowerAppsToolsTemp_sa.cdsproj.CoreCompileInputs.cache
+         Task Parameter:UpdateToAbsolutePaths=True
+         Comparison path is "bin\Debug\".
+       Done executing task "FindUnderPath".
+       Task "FindUnderPath"
+         Task Parameter:Path=obj\Debug\
+         Task Parameter:
+             Files=
+                 obj\Debug\PowerAppsToolsTemp_sa.cdsproj.AssemblyReference.cache
+                 obj\Debug\PowerAppsToolsTemp_sa.cdsproj.CoreCompileInputs.cache
+         Task Parameter:UpdateToAbsolutePaths=True
+         Comparison path is "obj\Debug\".
+         Output Item(s): 
+             _CleanCurrentFileWritesInIntermediate=
+                 C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\obj\Debug\PowerAppsToolsTemp_sa.cdsproj.AssemblyReference.cache
+                 C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\obj\Debug\PowerAppsToolsTemp_sa.cdsproj.CoreCompileInputs.cache
+       Done executing task "FindUnderPath".
+       Added Item(s): 
+           _CleanCurrentFileWritesWithNoReferences=
+               C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\obj\Debug\PowerAppsToolsTemp_sa.cdsproj.AssemblyReference.cache
+               C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\obj\Debug\PowerAppsToolsTemp_sa.cdsproj.CoreCompileInputs.cache
+       Task "RemoveDuplicates"
+         Output Item(s): 
+             _CleanCurrentFileWrites=
+                 C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\obj\Debug\PowerAppsToolsTemp_sa.cdsproj.AssemblyReference.cache
+                 C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\obj\Debug\PowerAppsToolsTemp_sa.cdsproj.CoreCompileInputs.cache
+       Done executing task "RemoveDuplicates".
+   1:7>Done building target "_CleanGetCurrentAndPriorFileWrites" in project "PowerAppsToolsTemp_sa.cdsproj".
+   1:7>Target "IncrementalClean" in file "C:\Program Files\dotnet\sdk\8.0.103\Microsoft.Common.CurrentVersion.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "CoreBuild" depends on it):
+       Task "FindUnderPath"
+         Task Parameter:Path=bin\Debug\
+         Comparison path is "bin\Debug\".
+       Done executing task "FindUnderPath".
+       Task "FindUnderPath"
+         Task Parameter:Path=obj\Debug\
+         Comparison path is "obj\Debug\".
+       Done executing task "FindUnderPath".
+       Task "Delete"
+         Task Parameter:TreatErrorsAsWarnings=True
+       Done executing task "Delete".
+       Added Item(s): 
+           _CleanRemainingFileWritesAfterIncrementalClean=
+               C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\obj\Debug\PowerAppsToolsTemp_sa.cdsproj.AssemblyReference.cache
+               C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\obj\Debug\PowerAppsToolsTemp_sa.cdsproj.CoreCompileInputs.cache
+       Task "RemoveDuplicates"
+         Output Item(s): 
+             _CleanUniqueRemainingFileWritesAfterIncrementalClean=
+                 C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\obj\Debug\PowerAppsToolsTemp_sa.cdsproj.AssemblyReference.cache
+                 C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\obj\Debug\PowerAppsToolsTemp_sa.cdsproj.CoreCompileInputs.cache
+       Done executing task "RemoveDuplicates".
+       Task "WriteLinesToFile"
+         Task Parameter:Overwrite=True
+         Task Parameter:File=obj\Debug\PowerAppsToolsTemp_sa.cdsproj.FileListAbsolute.txt
+         Task Parameter:
+             Lines=
+                 C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\obj\Debug\PowerAppsToolsTemp_sa.cdsproj.AssemblyReference.cache
+                 C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\obj\Debug\PowerAppsToolsTemp_sa.cdsproj.CoreCompileInputs.cache
+       Done executing task "WriteLinesToFile".
+   1:7>Done building target "IncrementalClean" in project "PowerAppsToolsTemp_sa.cdsproj".
+       Target "PostBuildEvent" skipped, due to false condition; ('$(PostBuildEvent)' != '' and ('$(RunPostBuildEvent)' != 'OnOutputUpdated' or '$(_AssemblyTimestampBeforeCompile)' != '$(_AssemblyTimestampAfterCompile)')) was evaluated as ('' != '' and ('' != 'OnOutputUpdated' or '' != '')).
+   1:7>Target "CoreBuild" in file "C:\Program Files\dotnet\sdk\8.0.103\Microsoft.Common.CurrentVersion.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "Build" depends on it):
+   1:7>Done building target "CoreBuild" in project "PowerAppsToolsTemp_sa.cdsproj".
+   1:7>Target "AfterBuild" in file "C:\Program Files\dotnet\sdk\8.0.103\Microsoft.Common.CurrentVersion.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "Build" depends on it):
+   1:7>Done building target "AfterBuild" in project "PowerAppsToolsTemp_sa.cdsproj".
+   1:7>Target "CopyCdsSolutionContent" in file "C:\Users\ShaheerAhmad\.nuget\packages\microsoft.powerapps.msbuild.solution\1.31.2\build\Microsoft.PowerApps.MSBuild.Solution.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "ProcessCdsProjectReferencesOutputs" depends on it):
+       Set Property: SourceSolutionFileRoot=C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\src
+       Set Property: SourceSolutionFilePath=C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\src/**
+       Set Property: SolutionPackageLogPath=C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\obj\Debug
+       Set Property: SolutionPackageZipPath=C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\bin\Debug
+       Set Property: SolutionPackageZipFile=PowerAppsToolsTemp_sa.zip
+       Added Item(s): 
+           ExcludeDirectories=
+               obj\Debug\PowerAppsToolsTemp_sa.cdsproj.AssemblyReference.cache
+               obj\Debug\PowerAppsToolsTemp_sa.cdsproj.CoreCompileInputs.cache
+               obj\Debug\PowerAppsToolsTemp_sa.cdsproj.FileListAbsolute.txt
+       Added Item(s): 
+           SourceSolutionFiles=
+               C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\src\Other\Customizations.xml
+               C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\src\Other\Relationships.xml
+               C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\src\Other\Solution.xml
+       Using "Copy" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "Copy"
+         Task Parameter:
+             SourceFiles=
+                 C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\src\Other\Customizations.xml
+                 C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\src\Other\Relationships.xml
+                 C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\src\Other\Solution.xml
+         Task Parameter:
+             DestinationFiles=
+                 obj\Debug\Metadata/Other\Customizations.xml
+                 obj\Debug\Metadata/Other\Relationships.xml
+                 obj\Debug\Metadata/Other\Solution.xml
+         Creating directory "obj\Debug\Metadata\Other".
+         Creating directory "obj\Debug\Metadata\Other".
+         Creating directory "obj\Debug\Metadata\Other".
+         Copying file from "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\src\Other\Relationships.xml" to "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\obj\Debug\Metadata\Other\Relationships.xml".
+         Copying file from "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\src\Other\Customizations.xml" to "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\obj\Debug\Metadata\Other\Customizations.xml".
+         Copying file from "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\src\Other\Solution.xml" to "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\obj\Debug\Metadata\Other\Solution.xml".
+       Done executing task "Copy".
+   1:7>Done building target "CopyCdsSolutionContent" in project "PowerAppsToolsTemp_sa.cdsproj".
+   1:7>Target "ProcessCdsProjectReferencesOutputs" in file "C:\Users\ShaheerAhmad\.nuget\packages\microsoft.powerapps.msbuild.solution\1.31.2\build\Microsoft.PowerApps.MSBuild.Solution.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "PowerAppsPackage" depends on it):
+       Task "MSBuild"
+         Task Parameter:
+             Projects=
+                 ..\..\pcfaggrid.pcfproj
+                         OutputItemType=
+                         ReferenceSourceTarget=ProjectReference
+                         Targets=
+         Task Parameter:Targets=GetProjectOutputPath
+   1:7>Project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (1:7) is building "C:\repos\Advanced-Grid\pcfaggrid.pcfproj" (2:9) on node 1 (GetProjectOutputPath target(s)).
+   2:9>Project file contains ToolsVersion="15.0". This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion="Current". For more information, please see http://go.microsoft.com/fwlink/?LinkId=293424.
+       Target "_PpbtTelemetryInitializeSession" skipped. Previously built successfully.
+   2:9>Target "GetProjectOutputPath" in file "C:\Users\ShaheerAhmad\.nuget\packages\microsoft.powerapps.msbuild.pcf\1.31.2\build\Microsoft.PowerApps.MSBuild.Pcf.targets" from project "C:\repos\Advanced-Grid\pcfaggrid.pcfproj" (entry point):
+       Added Item(s): 
+           ProjectOutputPath=
+               C:\repos\Advanced-Grid\out\controls\
+                       PowerAppsComponentType=Pcf
+       Target output items:
+           C:\repos\Advanced-Grid\out\controls\
+               PowerAppsComponentType = Pcf
+   2:9>Done building target "GetProjectOutputPath" in project "pcfaggrid.pcfproj".
+   2:9>Done Building Project "C:\repos\Advanced-Grid\pcfaggrid.pcfproj" (GetProjectOutputPath target(s)).
+   1:7>ProcessCdsProjectReferencesOutputs:
+         Output Item(s): 
+             ProjectReferenceCopyLocalPaths=
+                 C:\repos\Advanced-Grid\out\controls\
+                         MSBuildSourceProjectFile=C:\repos\Advanced-Grid\pcfaggrid.pcfproj
+                         MSBuildSourceTargetName=GetProjectOutputPath
+                         OriginalItemSpec=..\..\pcfaggrid.pcfproj
+                         OutputItemType=
+                         PowerAppsComponentType=Pcf
+                         ReferenceSourceTarget=ProjectReference
+                         Targets=
+       Done executing task "MSBuild".
+       Assembly loaded during TaskRun: Microsoft.PowerPlatform.MSBuild.Solution.Tasks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: C:\Users\ShaheerAhmad\.nuget\packages\microsoft.powerapps.msbuild.solution\1.31.2\tasks\net6.0\Microsoft.PowerPlatform.MSBuild.Solution.Tasks.dll, MVID: d94e6aac-3063-41be-8647-7ab2f367691f, AppDomain: [Default])
+       Using "ProcessCdsProjectReferencesOutputs" task from assembly "C:\Users\ShaheerAhmad\.nuget\packages\microsoft.powerapps.msbuild.solution\1.31.2\tasks\net6.0\Microsoft.PowerPlatform.MSBuild.Solution.Tasks.dll".
+       Task "ProcessCdsProjectReferencesOutputs"
+         Task Parameter:
+             SourceFileItems=
+                 C:\repos\Advanced-Grid\out\controls\
+                         MSBuildSourceProjectFile=C:\repos\Advanced-Grid\pcfaggrid.pcfproj
+                         MSBuildSourceTargetName=GetProjectOutputPath
+                         OriginalItemSpec=..\..\pcfaggrid.pcfproj
+                         OutputItemType=
+                         PowerAppsComponentType=Pcf
+                         ReferenceSourceTarget=ProjectReference
+                         Targets=
+         Task Parameter:PcfForceUpdateFlag=true
+         Task Parameter:WorkingDirectoryPath=obj\Debug\Metadata
+         Assembly loaded during TaskRun (Microsoft.PowerPlatform.MSBuild.Tasks.ProcessCdsProjectReferencesOutputs): System.Xml.XPath.XDocument, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.3\System.Xml.XPath.XDocument.dll, MVID: e2b576f0-2edd-47ae-a1dd-59d3db254899, AppDomain: [Default])
+         Solution.xml path obj\Debug\Metadata\Other\Solution.xml
+         Publisher prefix is set to sa
+         Processing output of component type: Pcf, source output directory: C:\repos\Advanced-Grid\out\controls\, destination directory: C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\obj\Debug\Metadata\Controls
+         Process: Copy: Copied file from source: C:\repos\Advanced-Grid\out\controls\AgGrid\bundle.js to destination: C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\obj\Debug\Metadata\Controls\sa_AgGrid.AgGrid\bundle.js 
+         Process: Copy: Copied file from source: C:\repos\Advanced-Grid\out\controls\AgGrid\ControlManifest.xml to destination: C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\obj\Debug\Metadata\Controls\sa_AgGrid.AgGrid\ControlManifest.xml 
+         Process: Output copied from source directory: C:\repos\Advanced-Grid\out\controls\AgGrid to destination directory: C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\obj\Debug\Metadata\Controls\sa_AgGrid.AgGrid
+         Process: Control data node created in C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\obj\Debug\Metadata\Controls\sa_AgGrid.AgGrid
+         Process: Root Component of type: 66, schema name: sa_AgGrid.AgGrid added to Solution
+       Done executing task "ProcessCdsProjectReferencesOutputs".
+   1:7>Done building target "ProcessCdsProjectReferencesOutputs" in project "PowerAppsToolsTemp_sa.cdsproj".
+       Target "EnsureSolutionVersionSet" skipped, due to false condition; ('$(SolutionVersion)' == '' and '$(SolutionVersionStrategy)' != '') was evaluated as ('' == '' and '' != '').
+       Target "WriteSolutionVersion" skipped, due to false condition; ('$(SolutionVersion)' != '' and '$(SolutionVersionStrategy)' != '') was evaluated as ('' != '' and '' != '').
+   1:7>Target "SolutionVersioningPipeline" in file "C:\Users\ShaheerAhmad\.nuget\packages\microsoft.powerapps.msbuild.solution\1.31.2\build\Microsoft.PowerApps.MSBuild.Solution.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "PowerAppsPackage" depends on it):
+   1:7>Done building target "SolutionVersioningPipeline" in project "PowerAppsToolsTemp_sa.cdsproj".
+   1:7>Target "PowerAppsPackage" in file "C:\Users\ShaheerAhmad\.nuget\packages\microsoft.powerapps.msbuild.solution\1.31.2\build\Microsoft.PowerApps.MSBuild.Solution.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "Build" depends on it):
+       Task "Message"
+         Task Parameter:Importance=High
+         Task Parameter:Text=Running Solution Packager to build package type: Unmanaged bin\Debug\PowerAppsToolsTemp_sa.zip
+         Running Solution Packager to build package type: Unmanaged bin\Debug\PowerAppsToolsTemp_sa.zip
+       Done executing task "Message".
+       Using "SolutionPackagerTask" task from assembly "C:\Users\ShaheerAhmad\.nuget\packages\microsoft.powerapps.msbuild.solution\1.31.2\tasks\net6.0\Microsoft.PowerPlatform.MSBuild.Solution.Tasks.dll".
+       Task "SolutionPackagerTask"
+         Task Parameter:SolutionRootDirectory=obj\Debug\Metadata
+         Task Parameter:PackageType=Unmanaged
+         Task Parameter:ErrorLevel=Info
+         Task Parameter:PathToZipFile=bin\Debug\PowerAppsToolsTemp_sa.zip
+         Task Parameter:LogFilePath=obj\Debug\SolutionPackager.log
+         Task Parameter:Localize=False
+         Task Parameter:Action=Pack
+         Assembly loaded during TaskRun (Microsoft.PowerPlatform.MSBuild.Tasks.SolutionPackagerTask): SolutionPackagerLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: C:\Users\ShaheerAhmad\.nuget\packages\microsoft.powerapps.msbuild.solution\1.31.2\tasks\net6.0\SolutionPackagerLib.dll, MVID: 8b37fded-b89d-413b-ab6b-b5c26a39858d, AppDomain: [Default])
+         Assembly loaded during TaskRun (Microsoft.PowerPlatform.MSBuild.Tasks.SolutionPackagerTask): System.ComponentModel.Composition, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 (location: C:\Users\ShaheerAhmad\.nuget\packages\microsoft.powerapps.msbuild.solution\1.31.2\tasks\net6.0\System.ComponentModel.Composition.dll, MVID: 0339460e-cdb4-43d2-86a0-7d4ee5e9f385, AppDomain: [Default])
+         Assembly loaded during TaskRun (Microsoft.PowerPlatform.MSBuild.Tasks.SolutionPackagerTask): System.Diagnostics.TextWriterTraceListener, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.3\System.Diagnostics.TextWriterTraceListener.dll, MVID: 299a9768-96ac-4093-8fc2-477f20e60bad, AppDomain: [Default])
+         Assembly loaded during TaskRun (Microsoft.PowerPlatform.MSBuild.Tasks.SolutionPackagerTask): System.Collections.Specialized, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.3\System.Collections.Specialized.dll, MVID: c2e0e241-0da8-47cc-b8b5-d8d776aed599, AppDomain: [Default])
+         Assembly loaded during TaskRun (Microsoft.PowerPlatform.MSBuild.Tasks.SolutionPackagerTask): System.IO.Packaging, Version=4.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: C:\Users\ShaheerAhmad\.nuget\packages\microsoft.powerapps.msbuild.solution\1.31.2\tasks\net6.0\System.IO.Packaging.dll, MVID: 04fd0573-ef16-4e32-9965-84ee2c328641, AppDomain: [Default])
+         Assembly loaded during TaskRun (Microsoft.PowerPlatform.MSBuild.Tasks.SolutionPackagerTask): System.Configuration.ConfigurationManager, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 (location: C:\Users\ShaheerAhmad\.nuget\packages\microsoft.powerapps.msbuild.solution\1.31.2\tasks\net6.0\System.Configuration.ConfigurationManager.dll, MVID: 84b1c75c-0039-425e-a66a-8b8d05724b61, AppDomain: [Default])
+         Assembly loaded during TaskRun (Microsoft.PowerPlatform.MSBuild.Tasks.SolutionPackagerTask): System.Net.WebClient, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 (location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.3\System.Net.WebClient.dll, MVID: 0912f596-a6be-46ac-b1c6-afc5742f7fc4, AppDomain: [Default])
+         Assembly loaded during TaskRun (Microsoft.PowerPlatform.MSBuild.Tasks.SolutionPackagerTask): System.Runtime.Extensions, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.3\System.Runtime.Extensions.dll, MVID: c4f05aa6-1d07-4bed-a728-2d76055f39b0, AppDomain: [Default])
+         Assembly loaded during TaskRun (Microsoft.PowerPlatform.MSBuild.Tasks.SolutionPackagerTask): Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed (location: C:\Users\ShaheerAhmad\.nuget\packages\microsoft.powerapps.msbuild.solution\1.31.2\tasks\net6.0\Newtonsoft.Json.dll, MVID: 7e62198b-eab2-4380-bbac-29171862d1d8, AppDomain: [Default])
+       Done executing task "SolutionPackagerTask".
+       Task "Message"
+         Task Parameter:Importance=High
+         Task Parameter:Text=Solution: bin\Debug\PowerAppsToolsTemp_sa.zip generated.
+         Solution: bin\Debug\PowerAppsToolsTemp_sa.zip generated.
+       Done executing task "Message".
+       Task "Message"
+         Task Parameter:Importance=High
+         Task Parameter:Text=Solution Package Type: Unmanaged generated.
+         Solution Package Type: Unmanaged generated.
+       Done executing task "Message".
+       Task "Message"
+         Task Parameter:Importance=Normal
+         Task Parameter:Text=Solution Packager log path: obj\Debug\SolutionPackager.log.
+         Solution Packager log path: obj\Debug\SolutionPackager.log.
+       Done executing task "Message".
+       Task "Message"
+         Task Parameter:Importance=Normal
+         Task Parameter:Text=Solution Packager error level: Info.
+         Solution Packager error level: Info.
+       Done executing task "Message".
+       Using "PpbtTelemetryTrackEvent" task from assembly "C:\Users\ShaheerAhmad\.nuget\packages\microsoft.powerapps.msbuild.solution\1.31.2\tasks\net6.0\Microsoft.PowerPlatform.MSBuild.Telemetry.Tasks.dll".
+       Task "PpbtTelemetryTrackEvent"
+         Task Parameter:EventName=target-PowerAppsPackage
+         Task Parameter:EventData=SolutionPackageType=Unmanaged;SolutionPackageLocalTemplate=;SolutionPackageEnableLocalization=false
+         Task Parameter:ProjectType=solution
+         TelemetrySessionService: Calling telemetry recorder with process info: 
+           WD: C:\Users\ShaheerAhmad\.nuget\packages\microsoft.powerapps.msbuild.solution\1.31.2\tasks\net6.0\ppbtTelemetryRecorder
+           FileName: C:\Program Files\dotnet\dotnet.exe
+           ppbtTelemetryRecorder.dll TrackEvent 2024-03-27T05:29:36.9793284+00:00 solution c3ff8941-444e-415e-aace-2fb95efb3066 target-PowerAppsPackage {\"SolutionPackageType\":\"Unmanaged\",\"SolutionPackageLocalTemplate\":\"null\",\"SolutionPackageEnableLocalization\":\"false\"} null
+       Done executing task "PpbtTelemetryTrackEvent".
+   1:7>Done building target "PowerAppsPackage" in project "PowerAppsToolsTemp_sa.cdsproj".
+   1:7>Target "CleanUpIntermediateFiles" in file "C:\Users\ShaheerAhmad\.nuget\packages\microsoft.powerapps.msbuild.solution\1.31.2\build\Microsoft.PowerApps.MSBuild.Solution.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "Build" depends on it):
+       Task "RemoveDir"
+         Task Parameter:Directories=obj\Debug\Metadata
+         Removing directory "obj\Debug\Metadata".
+       Done executing task "RemoveDir".
+       Task "RemoveDir" skipped, due to false condition; (Exists('$(SolutionPackagerLocalizationWorkingDirectory)')) was evaluated as (Exists('obj\Debug\LocExt')).
+       Task "Message"
+         Task Parameter:Importance=High
+         Task Parameter:Text=Completed intermiediate files clean up.
+         Completed intermiediate files clean up.
+       Done executing task "Message".
+   1:7>Done building target "CleanUpIntermediateFiles" in project "PowerAppsToolsTemp_sa.cdsproj".
+   1:7>Target "EndTelemetryTask" in file "C:\Users\ShaheerAhmad\.nuget\packages\microsoft.powerapps.msbuild.solution\1.31.2\build\Microsoft.PowerApps.MSBuild.Solution.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "Build" depends on it):
+       Task "PpbtTelemetryEndBuildPhase"
+         Task Parameter:BuildPhase=build
+         Task Parameter:BuildPhaseStartTimeTicks=638471135825224734
+         Task Parameter:ProjectType=solution
+         TelemetrySessionService: Calling telemetry recorder with process info: 
+           WD: C:\Users\ShaheerAhmad\.nuget\packages\microsoft.powerapps.msbuild.solution\1.31.2\tasks\net6.0\ppbtTelemetryRecorder
+           FileName: C:\Program Files\dotnet\dotnet.exe
+           ppbtTelemetryRecorder.dll TrackEvent 2024-03-27T05:29:37.0025611+00:00 solution c3ff8941-444e-415e-aace-2fb95efb3066 EndBuildPhase {\"buildPhase\":\"build\"} "{\"Execution Time(ms)\":594480.0}"
+       Done executing task "PpbtTelemetryEndBuildPhase".
+   1:7>Done building target "EndTelemetryTask" in project "PowerAppsToolsTemp_sa.cdsproj".
+   1:7>Target "Build" in file "C:\Program Files\dotnet\sdk\8.0.103\Microsoft.Common.CurrentVersion.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "Rebuild" depends on it):
+       Target output items:
+           C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\bin\Debug\PowerAppsToolsTemp_sa.exe
+               TargetFrameworkIdentifier = .NETFramework
+               TargetPlatformMoniker = Windows,Version=7.0
+               CopyUpToDateMarker = C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\obj\Debug\PowerAppsToolsTemp_sa.cdsproj.CopyComplete
+               TargetPlatformIdentifier = Windows
+               TargetFrameworkVersion = 4.6.2
+   1:7>Done building target "Build" in project "PowerAppsToolsTemp_sa.cdsproj".
+   1:7>Target "AfterRebuild" in file "C:\Program Files\dotnet\sdk\8.0.103\Microsoft.Common.CurrentVersion.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "Rebuild" depends on it):
+   1:7>Done building target "AfterRebuild" in project "PowerAppsToolsTemp_sa.cdsproj".
+       Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
+   1:7>Target "Rebuild" in file "C:\Program Files\dotnet\sdk\8.0.103\Microsoft.Common.CurrentVersion.targets" from project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (entry point):
+       Target output items:
+           C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\bin\Debug\PowerAppsToolsTemp_sa.exe
+   1:7>Done building target "Rebuild" in project "PowerAppsToolsTemp_sa.cdsproj".
+   1:7>Done Building Project "C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (Rebuild target(s)).
+Deferred Messages
+     0>
+Detailed Build Summary
+======================
+    
+         
+         ============================== Build Hierarchy (IDs represent configurations) =====================================================
+         Id                  : Exclusive Time   Total Time   Path (Targets)
+         -----------------------------------------------------------------------------------------------------------------------------------
+         0                   : 2.518s           3.976s       C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj (Restore) 
+         | 1                 : 0.036s           0.036s       C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj (_IsProjectRestoreSupported) 
+         | 2                 : 0.008s           1.306s       C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj (_GenerateRestoreProjectPathWalk) 
+         | . 3               : 1.298s           1.298s       C:\repos\Advanced-Grid\pcfaggrid.pcfproj (_GenerateRestoreProjectPathWalk) 
+         | 4                 : 0.001s           0.001s       C:\repos\Advanced-Grid\pcfaggrid.pcfproj (_IsProjectRestoreSupported) 
+         | 5                 : 0.082s           0.082s       C:\repos\Advanced-Grid\pcfaggrid.pcfproj (_GenerateRestoreGraphProjectEntry) 
+         | 6                 : 0.011s           0.011s       C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj (_GenerateRestoreGraphProjectEntry) 
+         | 7                 : 0.014s           0.014s       C:\repos\Advanced-Grid\pcfaggrid.pcfproj (_GenerateProjectRestoreGraph) 
+         . 8                 : 0.007s           0.007s       C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj (_GenerateProjectRestoreGraph) 
+         
+         ============================== Node Utilization (IDs represent configurations) ====================================================
+         Timestamp:            1        Duration   Cumulative
+         -----------------------------------------------------------------------------------------------------------------------------------
+         638471135694527541:   0        0.307s     0.307s ......
+         638471135697594208:   1        0.036s     0.342s 
+         638471135697950773:   0        0.052s     0.395s .
+         638471135698473174:   2        0.006s     0.400s 
+         638471135698531906:   3        1.298s     1.698s .........................
+         638471135711511513:   2        0.002s     1.701s 
+         638471135711535791:   0        0.004s     1.705s 
+         638471135711575705:   4        0.001s     1.706s 
+         638471135711583438:   0        0.004s     1.710s 
+         638471135711622727:   5        0.082s     1.791s .
+         638471135712440924:   6        0.011s     1.803s 
+         638471135712555138:   0        0.001s     1.804s 
+         638471135712567763:   7        0.014s     1.818s 
+         638471135712707585:   8        0.008s     1.826s 
+         638471135712782751:   0        2.152s     3.978s ...........................................
+         -----------------------------------------------------------------------------------------------------------------------------------
+         Utilization:          100.0    Average Utilization: 100.0
+         
+         Detailed Build Summary
+         ======================
+             
+         
+         ============================== Build Hierarchy (IDs represent configurations) =====================================================
+         Id                  : Exclusive Time   Total Time   Path (Targets)
+         -----------------------------------------------------------------------------------------------------------------------------------
+         9                   : 1.248s           603.592s       C:\repos\Advanced-Grid\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj (Rebuild) 
+         | 10                : 1.624s           1.624s       C:\repos\Advanced-Grid\pcfaggrid.pcfproj (GetTargetFrameworks) 
+         | 11                : 6.957s           6.957s       C:\repos\Advanced-Grid\pcfaggrid.pcfproj (Clean) 
+         | 12                : 593.761s           593.761s       C:\repos\Advanced-Grid\pcfaggrid.pcfproj () 
+         | 13                : 0.001s           0.001s       C:\repos\Advanced-Grid\pcfaggrid.pcfproj (GetNativeManifest) 
+         . 14                : 0.001s           0.001s       C:\repos\Advanced-Grid\pcfaggrid.pcfproj (GetProjectOutputPath) 
+         
+         ============================== Node Utilization (IDs represent configurations) ====================================================
+         Timestamp:            1        Duration   Cumulative
+         -----------------------------------------------------------------------------------------------------------------------------------
+         638471135694527541:   0        0.307s     0.307s ......
+         638471135697594208:   1        0.036s     0.342s 
+         638471135697950773:   0        0.052s     0.395s .
+         638471135698473174:   2        0.006s     0.400s 
+         638471135698531906:   3        1.298s     1.698s .........................
+         638471135711511513:   2        0.002s     1.701s 
+         638471135711535791:   0        0.004s     1.705s 
+         638471135711575705:   4        0.001s     1.706s 
+         638471135711583438:   0        0.004s     1.710s 
+         638471135711622727:   5        0.082s     1.791s .
+         638471135712440924:   6        0.011s     1.803s 
+         638471135712555138:   0        0.001s     1.804s 
+         638471135712567763:   7        0.014s     1.818s 
+         638471135712707585:   8        0.008s     1.826s 
+         638471135712782751:   0        2.152s     3.978s ...........................................
+         638471135734338267:   9        0.366s     4.348s .......
+         638471135738002985:   10       1.624s     5.972s ................................
+         638471135754246676:   9        0.029s     6.001s 
+         638471135754538018:   11       6.957s     12.958s + (scale 1:100)
+         638471135824107943:   9        0.161s     13.119s ...
+         638471135825714424:   12       593.761s     606.880s ########### (scale 1:1000)
+         638471141763322907:   9        0.003s     606.882s 
+         638471141763350578:   13       0.001s     606.883s 
+         638471141763357400:   9        0.046s     606.929s 
+         638471141763820987:   14       0.001s     606.930s 
+         638471141763830358:   9        0.643s     607.573s ............
+         -----------------------------------------------------------------------------------------------------------------------------------
+         Utilization:          100.0    Average Utilization: 100.0
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:10:07.62
