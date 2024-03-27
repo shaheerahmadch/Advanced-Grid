@@ -19,6 +19,7 @@ export class AgGrid implements ComponentFramework.StandardControl<IInputs, IOutp
     private editable : boolean;
     private resizable : boolean;
     private filter : boolean;
+    private autoDefinationName : string;
    /**
      * Empty constructor.
      */
@@ -47,11 +48,12 @@ export class AgGrid implements ComponentFramework.StandardControl<IInputs, IOutp
         this.pivotColumns = context.parameters.pivotColumns.raw;
         this.aggFuncColumns = context.parameters.aggFuncColumns.raw;
         this.data = context.parameters.data && context.parameters.data.raw ? context.parameters.data.raw : undefined;
-        this.columnDef = context.parameters.data && context.parameters.data.raw ? context.parameters.data.raw : undefined;
+        this.columnDef = context.parameters.columnDef && context.parameters.columnDef.raw ? context.parameters.columnDef.raw : undefined;
         this.sideBar = context.parameters.sideBar.raw;
         this.editable = context.parameters.editable.raw;
         this.resizable = context.parameters.resizable.raw;
         this.filter = context.parameters.filter.raw;
+        this.autoDefinationName = context.parameters.autoDefName.raw? context.parameters.autoDefName.raw:"";
         
     }
 
@@ -67,14 +69,15 @@ export class AgGrid implements ComponentFramework.StandardControl<IInputs, IOutp
         this.aggFuncColumns = context.parameters.aggFuncColumns.raw;
         this.theme = context.parameters.theme.raw;
         this.data = context.parameters.data && context.parameters.data.raw ? context.parameters.data.raw : undefined;
-        this.columnDef = context.parameters.data && context.parameters.data.raw ? context.parameters.data.raw : undefined;
+        this.columnDef = context.parameters.columnDef && context.parameters.columnDef.raw ? context.parameters.columnDef.raw : undefined;
         this.sideBar = context.parameters.sideBar.raw;
         this.editable = context.parameters.editable.raw;
         this.resizable = context.parameters.resizable.raw;
         this.filter = context.parameters.filter.raw;
+        this.autoDefinationName = context.parameters.autoDefName.raw? context.parameters.autoDefName.raw:"";
        
         ReactDOM.render(
-            React.createElement(MyAgGrid, {apiUrl : this.apiUrl,enableRowGroupColumns : this.enableRowGroupColumns,pivotColumns : this.pivotColumns,aggFuncColumns : this.aggFuncColumns, theme : this.theme, data: this.data,columnDef:this.columnDef,sideBar:this.sideBar,editable:this.editable,resizable:this.resizable,filter:this.filter }),
+            React.createElement(MyAgGrid, {apiUrl : this.apiUrl,enableRowGroupColumns : this.enableRowGroupColumns,pivotColumns : this.pivotColumns,aggFuncColumns : this.aggFuncColumns, theme : this.theme, data: this.data,columnDef:this.columnDef,sideBar:this.sideBar,editable:this.editable,resizable:this.resizable,filter:this.filter,autoDefinationName:this.autoDefinationName }),
             // React.createElement(MyAgGrid, {apiUrl : this.apiUrl}),
             this.con
             );

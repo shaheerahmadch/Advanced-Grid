@@ -31,10 +31,11 @@
     </property>
     <!--<property name="theme" display-name-key="theme" description-key="theme" of-type="SingleLine.Text" usage="bound" required="true" />-->
     <property name="data" display-name-key="Data" description-key="data" of-type="Object" usage="bound" required="true" />
-    <property name="columnDefs" display-name-key="Column Definitions" description-key="Column Definitions" of-type="Object" usage="bound" required="true" />
+    <property name="columnDef" display-name-key="Column Definitions" description-key="Column Definitions" of-type="Object" usage="bound" required="true" />
     <property name="enableRowGroupColumns" display-name-key="Group Columns" description-key="enableRowGroupColumns_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
     <property name="pivotColumns" display-name-key="Pivot Columns" description-key="pivotColumns_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
     <property name="aggFuncColumns" display-name-key="Function Columns" description-key="aggFuncColumns_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="autoDefName" display-name-key="Auto Defination Column" description-key="autoDefName" of-type="SingleLine.Text" usage="bound" required="true" />
     <property name="sideBar" display-name-key="sideBar" description-key="sideBar" of-type="TwoOptions" usage="bound" required="true" />
     <property name="editable" display-name-key="editable" description-key="editable" of-type="TwoOptions" usage="bound" required="true" />
     <property name="resizable" display-name-key="resizable" description-key="resizable" of-type="TwoOptions" usage="bound" required="true" />

@@ -5,8 +5,7 @@
  * Version: 1.2.0
  * License: MIT
  */
-
-import React, { useState, useEffect, useMemo} from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { AgGridReact } from 'ag-grid-react';
 import 'ag-grid-community/styles/ag-grid.css'; // Core CSS
 import 'ag-grid-community/styles/ag-theme-quartz.css'; // Theme CSS
@@ -22,39 +21,40 @@ interface MyAgGridProps {
     pivotColumns: string | null;
     theme: string;// | null;
     data: { rows: any[] } | undefined;
-    columnDef: any | undefined;
+    columnDef: { rows: any[] } | undefined;
     aggFuncColumns: string | null;
-    sideBar : boolean;
+    sideBar: boolean;
     editable: boolean;
     resizable: boolean;
     filter: boolean;
+    autoDefinationName: string;
 }
 
-const AgGrid: React.FC<MyAgGridProps> = React.memo(({ apiUrl, enableRowGroupColumns, pivotColumns, aggFuncColumns, theme,data ,columnDef,sideBar,editable,resizable,filter}) => {
+const AgGrid: React.FC<MyAgGridProps> = React.memo(({ apiUrl, enableRowGroupColumns, pivotColumns, aggFuncColumns, theme, data, columnDef, sideBar, editable, resizable, filter, autoDefinationName }) => {
     console.log('AG Grid')
     const [divClass, setDivClass] = useState(theme);
     const [rowData, setRowData] = useState<any[]>([]);
-    const [autoDefName, setAutoDefName] = useState("athlete");
+    const [autoDefName, setAutoDefName] = useState(autoDefinationName);
     const [columnDefs, setColumnDefs] = useState([]);
     useEffect(() => {
         const fetchData = async () => {
-            
+
             try {
-                if(data && data.rows){
+                if (data && data.rows) {
                     setRowData(data.rows);
                     if (data && data.rows && data.rows.length > 0) {
                         const headers = Object.keys(data.rows[0]);
                         setAutoDefName(headers[0]);
-        
+
                         const enableRowGroup: string[] = enableRowGroupColumns?.split(";") || [];
                         const enablePivot: string[] = pivotColumns?.split(";") || [];
                         const aggFunc: string[] = aggFuncColumns?.split(";") || [];
-                        if(columnDef && columnDef.rows && columnDef.rows.length > 0){
+                        if (columnDef && columnDef.rows && columnDef.rows.length > 0) {
                             const dynamicColumnDefs: any = columnDef.rows;
                             setColumnDefs(dynamicColumnDefs)
                             console.log('Custom Column Def for Data ')
                         }
-                        else{
+                        else {
                             const dynamicColumnDefs: any = headers.map(header => ({
                                 field: header,
                                 enableRowGroup: enableRowGroup.includes(header),
@@ -64,10 +64,10 @@ const AgGrid: React.FC<MyAgGridProps> = React.memo(({ apiUrl, enableRowGroupColu
                             setColumnDefs(dynamicColumnDefs);
                             console.log('Dynamic Column Def for Data ')
                         }
-                        
+
                     }
                 }
-                else{
+                else {
                     let data;
                     //const response = await fetch('https://www.ag-grid.com/example-assets/olympic-winners.json');
                     const response = await fetch(`${apiUrl}`);
@@ -76,18 +76,19 @@ const AgGrid: React.FC<MyAgGridProps> = React.memo(({ apiUrl, enableRowGroupColu
                     if (data && data.length > 0) {
                         const headers = Object.keys(data[0]);
                         setAutoDefName(headers[0]);
-        
+
                         const enableRowGroup: string[] = enableRowGroupColumns?.split(";") || [];
                         const enablePivot: string[] = pivotColumns?.split(";") || [];
                         const aggFunc: string[] = aggFuncColumns?.split(";") || [];
-                        console.log(columnDef);
-                        console.log(columnDef.rows)
-                        if(columnDef && columnDef.rows && columnDef.rows.length > 0){
+                        console.log(columnDef ? columnDef : "sds");
+                        if (columnDef && columnDef.rows && columnDef.rows.length > 0) {
                             const dynamicColumnDefs: any = columnDef.rows;
                             setColumnDefs(dynamicColumnDefs)
-                            console.log('Custom Column Def for API ')
+                            console.log('Custom Column Def for API ');
+                            console.log(columnDef);
+                            console.log(columnDef.rows)
                         }
-                        else{
+                        else {
                             const dynamicColumnDefs: any = headers.map(header => ({
                                 field: header,
                                 enableRowGroup: enableRowGroup.includes(header),
@@ -97,21 +98,21 @@ const AgGrid: React.FC<MyAgGridProps> = React.memo(({ apiUrl, enableRowGroupColu
                             setColumnDefs(dynamicColumnDefs);
                             console.log('Dynamic Column Def for API ')
                         }
-                        
+
                     }
                 }
-                
+
             } catch (error) {
                 setRowData([]);
-                console.log('error: '+error)
+                console.log('error: ' + error)
             }
 
-            
+
         }
         fetchData();
 
-    }, [apiUrl, enableRowGroupColumns, pivotColumns, aggFuncColumns,theme,data, columnDef,sideBar,editable,resizable,filter])
-    
+    }, [apiUrl, enableRowGroupColumns, pivotColumns, aggFuncColumns, theme, data, columnDef, sideBar, editable, resizable, filter, autoDefinationName])
+
     const autoGroupColumnDef = useMemo(() => {
         return {
             minWidth: 270,
@@ -146,14 +147,14 @@ const AgGrid: React.FC<MyAgGridProps> = React.memo(({ apiUrl, enableRowGroupColu
             ]
         },
     };
-/*    const handleThemeChange = (selectedOption: string) => {
-        setSelectedOption(selectedOption)
-        setDivClass(selectedOption);
-    };
- <Theme options={option} onSelect={handleThemeChange} />*/
- // changed heigh from 8vh to 100%
+    /*    const handleThemeChange = (selectedOption: string) => {
+            setSelectedOption(selectedOption)
+            setDivClass(selectedOption);
+        };
+     <Theme options={option} onSelect={handleThemeChange} />*/
+    // changed heigh from 8vh to 100%
     return (
-        <div className={divClass} style={{ width: '100%', height: '100%'}}>
+        <div className={divClass} style={{ width: '100%', height: '100%' }}>
             < AgGridReact
                 rowData={rowData}
                 columnDefs={columnDefs}
