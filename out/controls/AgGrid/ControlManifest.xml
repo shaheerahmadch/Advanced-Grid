@@ -19,10 +19,10 @@
     <property name="pivotColumns" display-name-key="Pivot Columns" description-key="pivotColumns_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true"/>
     <property name="aggFuncColumns" display-name-key="Function Columns" description-key="aggFuncColumns_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true"/>
     <property name="autoDefName" display-name-key="Auto Defination Column" description-key="autoDefName" of-type="SingleLine.Text" usage="bound" required="true"/>
-    <property name="sideBar" display-name-key="sideBar" description-key="sideBar" of-type="TwoOptions" usage="bound" required="true"/>
-    <property name="editable" display-name-key="editable" description-key="editable" of-type="TwoOptions" usage="bound" required="true"/>
-    <property name="resizable" display-name-key="resizable" description-key="resizable" of-type="TwoOptions" usage="bound" required="true"/>
-    <property name="filter" display-name-key="filter" description-key="filter" of-type="TwoOptions" usage="bound" required="true"/>
+    <property name="sideBar" display-name-key="Enable Sidebar" description-key="sideBar" of-type="TwoOptions" usage="bound" required="true"/>
+    <property name="editable" display-name-key="Enable Edit" description-key="editable" of-type="TwoOptions" usage="bound" required="true"/>
+    <property name="resizable" display-name-key="Enable Resize" description-key="resizable" of-type="TwoOptions" usage="bound" required="true"/>
+    <property name="filter" display-name-key="Enable Filter" description-key="filter" of-type="TwoOptions" usage="bound" required="true"/>
     <resources>
       <code path="bundle.js" order="1"/>
     </resources>
